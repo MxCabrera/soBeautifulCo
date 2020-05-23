@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,EAAE,CAAC;EACA,KAAK,EAAE,GAAG;CACZ",
+    "sources": [
+        "styles.scss",
+        "_setup.scss",
+        "_global.scss",
+        "_header.scss",
+        "_main.scss",
+        "_footer.scss",
+        "_mediaQueries.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
