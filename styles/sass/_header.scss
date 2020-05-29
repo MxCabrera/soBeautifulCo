@@ -28,11 +28,31 @@ nav {
 
 .headerLanding {
    background-image: url(../../assets/header.JPG);
-   background-size: cover;
+}
+
+.headerContact {
+   background-image: url(../../assets/pic1.jpg);
+}
+
+.headerProducts {
+   background-image: url(../../assets/pic5.jpg);
+   background-position: 50% -15%;
+}
+
+.headerTeam {
+   background-image: url(../../assets/pic4.jpeg);
+   background-position: 50% 25%;
+   height: 60vh;
+}
+
+.headerService {
+   background-image: url(../../assets/pic3.jpg);
+   background-position: 50% 30%;
 }
 
 header {
    height: 95vh;
+   background-size: cover;
    h2 {
       text-transform: uppercase;
       color: white;
