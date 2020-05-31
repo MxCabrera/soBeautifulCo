@@ -27,11 +27,13 @@ nav {
 }
 
 .headerLanding {
-   background-image: url(../../assets/header.JPG);
+   // background-image: url(../../assets/header.JPG);
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/header.JPG);
 }
 
 .headerContact {
-   background-image: url(../../assets/pic1.jpg);
+   // background-image: url(../../assets/pic1.jpg);
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic1.jpg);
 }
 
 .headerProducts {
@@ -46,8 +48,9 @@ nav {
 }
 
 .headerService {
-   background-image: url(../../assets/pic3.jpg);
+   // background-image: url(../../assets/pic3.jpg);
    background-position: 50% 30%;
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic3.jpg);
 }
 
 header {
@@ -61,8 +64,8 @@ header {
       font-size: 4rem;
       width: 50%;
       font-weight: 400;
-      // font-family: 'Manrope', sans-serif;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Manrope', sans-serif;
+      // font-family: 'Poppins', sans-serif;
       // font-family: 'Raleway', sans-serif;
       // font-family: 'Roboto Mono', monospace;
    }
@@ -163,9 +166,9 @@ header {
 }
 
 .bookButton {
-  padding: 20px 30px;
+  padding: 25px 35px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   display: block;
   margin: 20px auto;
 }

@@ -244,6 +244,7 @@ html {
 
 body {
   background-color: #FDF6F0;
+  font-family: 'Manrope', sans-serif;
 }
 
 .mainWrapper {
@@ -294,11 +295,11 @@ nav .navWrap .logo img {
 }
 
 .headerLanding {
-  background-image: url(../../assets/header.JPG);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/header.JPG);
 }
 
 .headerContact {
-  background-image: url(../../assets/pic1.jpg);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic1.jpg);
 }
 
 .headerProducts {
@@ -313,8 +314,8 @@ nav .navWrap .logo img {
 }
 
 .headerService {
-  background-image: url(../../assets/pic3.jpg);
   background-position: 50% 30%;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic3.jpg);
 }
 
 header {
@@ -330,7 +331,7 @@ header h2 {
   font-size: 4rem;
   width: 50%;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 .nav-links {
@@ -440,9 +441,9 @@ header h2 {
 }
 
 .bookButton {
-  padding: 20px 30px;
+  padding: 25px 35px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   display: block;
   margin: 20px auto;
 }
@@ -495,6 +496,10 @@ header h2 {
   height: 100vh;
 }
 
+.mainService {
+  height: 100vh;
+}
+
 footer div {
   background-color: black;
   padding: 1rem;
@@ -509,6 +514,7 @@ footer div h2 {
 }
 
 footer div h2 a {
+  font-family: 'Manrope', sans-serif;
   text-decoration: none;
   color: grey;
 }
