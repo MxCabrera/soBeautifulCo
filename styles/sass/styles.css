@@ -497,7 +497,80 @@ header h2 {
 }
 
 .mainService {
-  height: 100vh;
+  background-color: #FDF6F0;
+}
+
+.serviceContainer {
+  background-color: white;
+  width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+}
+
+.serviceContainer h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.serviceContainer .serviceInfo {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.serviceContainer .productType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.serviceContainer .productType .serviceName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: pink;
+  margin-bottom: 1rem;
+}
+
+.serviceContainer button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1rem;
+  right: 45%;
+  -webkit-box-shadow: 0px 2px 5px #000;
+          box-shadow: 0px 2px 5px #000;
+  border-radius: 15px;
+}
+
+.serviceContainer button:hover {
+  background-color: pink;
+}
+
+.individualProduct {
+  border: 1px solid #bdbbbb;
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 30%;
+}
+
+.individualProduct:hover {
+  background-color: #FDF6F0;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 footer div {
