@@ -4,7 +4,7 @@
 }
 nav {
    height: 10vh;
-   min-height: 3rem;
+   min-height: 3.5rem;
    background-color: rgba(255, 255, 255, 1);
    display: flex;
    .navWrap {
@@ -16,11 +16,18 @@ nav {
       .logo{
          width: 50px;
          height: 50px;
-         margin-top: 0.7rem;
+         margin-top: 1rem;
          margin-left: 0.7rem;
          img {
             border-radius: 50px;
             width: 100%;
+         }
+      }
+      .nav-links {
+         li a {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1.1px;
          }
       }
    }
@@ -42,9 +49,10 @@ nav {
 }
 
 .headerTeam {
-   background-image: url(../../assets/pic4.jpeg);
+   // background-image: url(../../assets/pic4.jpeg);
    background-position: 50% 25%;
-   height: 60vh;
+   height: 40rem;
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic4.jpeg);
 }
 
 .headerService {
@@ -202,7 +210,7 @@ header {
   transition: box-shadow 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360);
    
    &:hover {
-     box-shadow: 0 0 0 28px rgba(0,0,0,0.25) inset;
+     box-shadow: 0 0 0 50px rgba(0,0,0,0.15) inset;
    }
   
   &:active {
