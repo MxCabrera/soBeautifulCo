@@ -17,3 +17,10 @@ body {
    max-width: 1600px;
    margin: 0 auto;
 }
+
+.flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+}

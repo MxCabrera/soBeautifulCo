@@ -41,11 +41,13 @@ nav {
 .headerContact {
    // background-image: url(../../assets/pic1.jpg);
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic1.jpg);
+   height: 45rem;
 }
 
 .headerProducts {
-   background-image: url(../../assets/pic5.jpg);
+   // background-image: url(../../assets/pic5.jpg);
    background-position: 50% -15%;
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic5.jpg);
 }
 
 .headerTeam {
@@ -62,7 +64,7 @@ nav {
 }
 
 header {
-   height: 95vh;
+   height: 100vh;
    background-size: cover;
    h2 {
       text-transform: uppercase;

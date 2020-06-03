@@ -9,7 +9,7 @@
       rel="stylesheet">
    <script src="https://kit.fontawesome.com/c9714a9747.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../styles/sass/styles.css">
-   <title>SO Beautiful&co. Beauty Bar</title>
+   <title>SoBeautiful&Co. Beauty Bar</title>
 </head>
 
 <body>
@@ -44,27 +44,32 @@
       </header>
       <main>
          <div class="contactInstructions">
-            <h2 class="warning">** CASH OR E-TRANSFER ONLY ** </h2>
-            <h2><i class="fas fa-calendar-check"></i> To Book appointments: Click the book appointment button on the right side of the page. After clicking please choose a date & time that works for you, then explain what service you want.</h2>
-            <h2><i class="fas fa-shopping-cart"></i> To purchase a product: Please use the product form on the left side of the page - Fill out your email and send us a message on what product/service you're interested in, and the amount you'd like. We will get back to you shortly with final details.</h2>
-            <h2><i class="fas fa-mobile-alt"></i> For any questions/concerns, please contact us at (905) 123-4567. Thank you for your support!</h2>
+            <h2 class="warning">How to reach us</h2>
+            <div class="flex">
+               <h2><i class="fas fa-shopping-cart"></i> To purchase a product: Please fill out product form on the left - Add your email and send us a message on what product/service you're interested in, and the quantity. We will get back to you shortly!</h2>
+               <h2><i class="fas fa-calendar-check"></i>To Book appointments: Click the book appointment button on the right side of the page. After clicking please choose a date & time that works for you, then explain what service you want.</h2>
+            </div>
+            <h2 class="contactNumber"><i class="fas fa-mobile-alt"></i> For any questions/concerns, please contact us at (905) 123-4567</h2>
+            <h2 class="cash">** CASH OR E-TRANSFER ONLY ** </h2>
          </div>
          <section>
                <form action="https://formspree.io/mgenagbk" method="POST">
+                  <h2>Tell us what you'd like!</h2>
                   <label>
-                     Your email:
-                     <input type="text" name="_replyto" placeholder="Your name">
+                     <input type="text" name="name" placeholder="Full Name">
                   </label>
                   <label>
-                     Your message:
+                     <input type="text" name="_replyto" placeholder="E-mail">
+                  </label>
+                  <label>
                      <textarea name="message" placeholder="Let us know what product/service you're interested in, as well as the amount you'd like!"></textarea>
                   </label>
 
                   <!-- your other form fields go here -->
 
-                  <button type="submit">Send</button>
+                  <button type="submit" class="submit">Send</button>
                </form>
-               <div>
+               <div class="calendly">
                   <h3>Calendly part</h3>
                </div>
          </section>
@@ -79,6 +84,8 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <script src='https://code.jquery.com/jquery-3.4.0.min.js'
       integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 <script src="../script.js"></script>
 

@@ -253,6 +253,20 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -306,11 +320,12 @@ nav .navWrap .nav-links li a {
 
 .headerContact {
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic1.jpg);
+  height: 45rem;
 }
 
 .headerProducts {
-  background-image: url(../../assets/pic5.jpg);
   background-position: 50% -15%;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic5.jpg);
 }
 
 .headerTeam {
@@ -325,7 +340,7 @@ nav .navWrap .nav-links li a {
 }
 
 header {
-  height: 95vh;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -581,8 +596,17 @@ header h2 {
   transition: all 0.5s;
 }
 
+.headshot {
+  width: 60%;
+}
+
+.headshot img {
+  width: 100%;
+}
+
 .mainTeam {
   position: relative;
+  height: 100vh;
 }
 
 .mainTeam .teamAbsolute {
@@ -618,24 +642,39 @@ section form {
   border: 1px solid #000;
   padding: 2rem;
   margin: 3rem;
+  background-color: white;
+}
+
+section form h2 {
+  text-align: center;
 }
 
 section form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-transform: uppercase;
+  margin: 0.5rem 0;
 }
 
-section div {
+section form label input,
+section form label textarea {
+  padding: 0.5rem;
+  background-color: #FDF6F0;
+  border: 1px solid #000;
+}
+
+section .calendly {
   width: 50%;
   padding: 2rem;
   margin: 3rem;
   border: 1px solid #000;
+}
+
+.submit {
+  width: 40%;
+  margin: 1rem auto;
+  padding: 0.7rem 1rem;
+  background-color: pink;
+  border: none;
+  cursor: pointer;
 }
 
 .contactInstructions {
@@ -643,9 +682,81 @@ section div {
   margin: 1rem auto;
 }
 
+.contactInstructions h2 {
+  margin: 0 auto;
+}
+
 .contactInstructions .warning {
   text-align: center;
   margin: 2rem 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.contactInstructions h2 {
+  font-weight: 400;
+}
+
+.contactInstructions .flex h2 {
+  width: 45%;
+}
+
+.contactInstructions .cash {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contactInstructions .contactNumber {
+  text-align: center;
+}
+
+.teamflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.carousel .testimonial {
+  margin: 1rem 0rem 3rem 0rem;
+  padding: 5rem 3rem;
+  background-color: #FFF;
+  -webkit-box-shadow: 2px 3px 15px #000;
+          box-shadow: 2px 3px 15px #000;
+}
+
+.carousel .testimonial p {
+  line-height: 2rem;
+  font-weight: 700;
 }
 
 footer div {
