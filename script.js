@@ -9,17 +9,23 @@ app.services = [
             name: "Classic Lash Extensions",
             price: 80.00,
             duration: "1hr 45mins",
-            class: "eyelash1" 
+            class: "eyelash1",
+            image: "classic.png",
+            info: "Classic Eyelash Extensions are a one-to-one application. This is a method where one eyelash extension is glued onto one of your natural lashes. If you’re looking for a more natural look Classic Eyelash Extensions are the perfect set for you!"
          }, {
             name: "Hybrid Lashes",
             price: 100.00,
             duration: "2hrs",
-            class: "eyelash2"
+            class: "eyelash2",
+            image: "hybrid.png",
+            info: "The Hybrid Eyelash Extensions is a technique that requires a combination of two different lash application. The Hybrid lashes consist of a mix of Classic lash application & Volume Application. This is the perfect set for you if you’re looking for a subtle fuller look that compliments your natural eyelashes."
          }, {
             name: "Volume",
             price: 120.00,
             duration: "2hr 30mins",
-            class: "eyelash3"
+            class: "eyelash3",
+            image: "volume.png",
+            info: "Volume lashes are multiple thinner extensions attached to one natural lash. All fans are handmade during your service. How full your lashes will look, will depend on client’s natural lashes and desired outcome. If you’re looking for your eyes to pop, this is the ultimate go to glam set!"
             
          }
       ]
@@ -127,6 +133,10 @@ app.getServices = () => {
                   return(`
                      <div class="individualProduct ${moreStuff.class}">
                         <p class="serviceName">${moreStuff.name}</p>
+                        <div class="serviceImage">
+                           <img src="../assets/${moreStuff.image}" alt="${moreStuff.name}">
+                        </div>
+                        <p class="serviceInfo">${moreStuff.info}</p>
                         <p>Price: $${moreStuff.price}.00</p>
                         <p>Duration: ${moreStuff.duration}</p>
                      </div>
@@ -154,8 +164,11 @@ $(function(){
    app.getServices()
    $('.thing').slick({
       dots: true,
-      // arrows: true,
+      arrows: true,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 4000,
+      nextArrow: '<button type="button" class="slick-next">Next</button>',
+      pauseOnHover: true,
+      pauseOnFocus: true,
    })
 })
