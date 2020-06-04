@@ -611,12 +611,12 @@ header h2 {
 
 .mainTeam {
   position: relative;
-  height: 180rem;
+  height: 188rem;
 }
 
 .mainTeam .teamAbsolute {
   width: 90%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   position: absolute;
   top: -7rem;
   left: 5%;
@@ -653,6 +653,18 @@ header h2 {
   width: 100%;
 }
 
+.teamflex:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.teamflex:hover .teamInfo p {
+  color: #000;
+  text-shadow: none;
+}
+
 .teamInfo {
   width: 60%;
 }
@@ -660,6 +672,19 @@ header h2 {
 .teamInfo h3 {
   margin: 1rem 0;
   font-size: 2rem;
+  color: pink;
+  text-shadow: .7px .7px 3px #000;
+}
+
+.teamInfo p {
+  line-height: 1.5rem;
+}
+
+.teamInfo .teamPosition {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #686767;
+  margin: 0.5rem 0 1rem 0;
 }
 
 .teamInfo .flexSocial {
@@ -676,14 +701,22 @@ header h2 {
 
 .teamInfo .flexSocial p {
   margin: 1rem 0.5rem;
+  background-color: white;
 }
 
 .teamInfo .flexSocial p a {
-  color: black;
+  color: #bdbbbb;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .teamInfo .flexSocial p a i {
   font-size: 2rem;
+}
+
+.teamInfo .flexSocial p a:hover {
+  color: pink;
+  -webkit-transform: all 0.7s;
+          transform: all 0.7s;
 }
 
 .contactSection {
@@ -706,6 +739,9 @@ header h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #000;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
   padding: 2rem;
   margin: 3rem;
   background-color: white;
@@ -733,15 +769,31 @@ header h2 {
   padding: 2rem;
   margin: 3rem;
   border: 1px solid #000;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+  background-color: #fff;
+}
+
+.contactSection .calendly h3 {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .submit {
-  width: 40%;
+  width: 30%;
   margin: 1rem auto;
   padding: 0.7rem 1rem;
   background-color: pink;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border: none;
   cursor: pointer;
+}
+
+.submit:hover {
+  color: white;
 }
 
 .contactInstructions {
@@ -751,6 +803,15 @@ header h2 {
 
 .contactInstructions h2 {
   margin: 0 auto;
+}
+
+.contactInstructions h2 span {
+  font-weight: 700;
+}
+
+.contactInstructions h2 p {
+  color: pink;
+  text-shadow: 0.5px 0.5px 1px #000;
 }
 
 .contactInstructions .warning {
@@ -771,6 +832,7 @@ header h2 {
 .contactInstructions .cash {
   text-align: center;
   margin-top: 1rem;
+  font-weight: 700;
 }
 
 .contactInstructions .contactNumber {
@@ -795,29 +857,72 @@ header h2 {
 }
 
 .carousel h1 {
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  font-size: 3rem;
+  text-shadow: -1px 5px 7px #000;
+  margin: 2rem auto;
+}
+
+.carousel .test1 {
+  font-size: 1.5rem;
+}
+
+.carousel .test1 p {
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+  margin-top: -.5rem;
+}
+
+.carousel .test2 {
+  font-size: 2rem;
+}
+
+.carousel .test2 p {
+  margin-top: 2rem;
+  letter-spacing: 1.2px;
+  line-height: 2.5rem;
+}
+
+.carousel .test3 {
+  font-size: 1.5rem;
+}
+
+.carousel .test3 p {
+  letter-spacing: 1.2px;
+  line-height: 2rem;
 }
 
 .carousel .testimonial {
   margin: 1rem 0rem 3rem 0rem;
+  height: 20rem;
   padding: 5rem 3rem;
-  background-color: #FFF;
+  background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(80, 79, 79, 0.9));
+  color: pink;
+  text-shadow: 2px 2px 2px #000;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  border-radius: 10px;
 }
 
 .carousel .testimonial p {
-  line-height: 2rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
   font-weight: 700;
 }
 
 .carousel .testimonial:hover {
-  background-color: #000;
+  background: linear-gradient(135deg, rgba(119, 119, 119, 0.9), rgba(83, 83, 83, 0.9), rgba(77, 76, 76, 0.9), rgba(160, 158, 158, 0.9), rgba(172, 171, 171, 0.9));
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
 .carousel .testimonial:hover p {
-  color: pink;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  color: #fff;
+  text-shadow: 2px 3px 3px #000;
 }
 
 .slick-prev:before {
@@ -826,6 +931,63 @@ header h2 {
 
 .slick-next:before {
   color: #000;
+}
+
+.productMain h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.productSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.productSection .productContainer {
+  width: 33%;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid #c2c0c0;
+}
+
+.productSection .productContainer .productSoon {
+  width: 140%;
+  height: 20rem;
+  margin-top: 10rem;
+  margin-left: -4rem;
+}
+
+.productSection .productContainer .productSoon img {
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.productSection .productContainer .productSoon p {
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.productSection .productContainer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 footer div {

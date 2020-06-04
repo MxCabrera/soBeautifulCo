@@ -80,12 +80,12 @@
 // team section 
 .mainTeam {
    position: relative;
-   height: 180rem;
+   height: 188rem;
    .teamAbsolute {
       width: 90%;
       // margin: 0 auto;
       // height: 100vh;
-      border-radius: 2rem;
+      border-radius: 1rem;
       position: absolute;
       top: -7rem;
       left: 5%;
@@ -112,6 +112,16 @@
          width: 100%;
       }
    }
+   &:hover {
+      transform: scale(1.05);
+      transition: all 0.7s;
+      .teamInfo {
+         p {
+            color: #000;
+            text-shadow: none;
+         }
+      }
+   }
 }
 
 .teamInfo {
@@ -119,6 +129,18 @@
    h3 {
       margin: 1rem 0;
       font-size: 2rem;
+      color: pink;
+      text-shadow: .7px .7px 3px #000;
+   }
+   p {
+      // text-shadow: 0.5px 0.5px 1px #000;
+      line-height: 1.5rem;
+   }
+   .teamPosition {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: rgb(104, 103, 103);
+      margin: 0.5rem 0 1rem 0;
    }
    .flexSocial {
       display: flex;
@@ -126,10 +148,16 @@
       align-content: space-between;
       p {
          margin: 1rem 0.5rem;
+         background-color: white;
          a {
-            color: black;
+            color: rgb(189, 187, 187);
+            text-shadow: 1px 1px 2px #000;
             i {
                font-size: 2rem;
+            }
+            &:hover {
+               color: pink;
+               transform: all 0.7s;
             }
          }
       }
@@ -144,6 +172,8 @@
       width: 49%;
       flex-direction: column;
       border: 1px solid #000;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px #000;
       padding: 2rem;
       margin: 3rem;
       background-color: white;
@@ -168,22 +198,42 @@
       padding: 2rem;
       margin: 3rem;
       border: 1px solid #000;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px #000;
+      background-color: #fff;
+      h3 {
+         text-align: center; 
+         font-size: 1.5rem;
+      }
    }
 }
 
 .submit {
-   width: 40%;
+   width: 30%;
    margin: 1rem auto;
    padding: 0.7rem 1rem;
    background-color: pink;
+   border-radius: 5px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
    border: none;
    cursor: pointer;
+   &:hover {
+      color: white;
+   }
 }
 .contactInstructions {
    width: 90%;
    margin: 1rem auto;
    h2 {
       margin: 0 auto;
+      span {
+         font-weight: 700;
+      }
+      p {
+         color: pink;
+         text-shadow: 0.5px 0.5px 1px #000;
+      }
    }
    .warning {
       text-align: center;
@@ -202,6 +252,7 @@
    .cash {
       text-align: center;
       margin-top: 1rem;
+      font-weight: 700;
    }
    .contactNumber {
       text-align: center;
@@ -219,23 +270,61 @@
    margin: 0 auto;
    text-align: center;
    h1 {
+      color: white;
+      
       text-transform: uppercase;
       letter-spacing: 1.2px;
+      font-size: 3rem;
+      text-shadow: -1px 5px 7px #000;
+      // border-bottom: 5px solid #000;
+      // width: 25.5%;
+      margin: 2rem auto;
+   }
+   .test1 {
+      font-size: 1.5rem;
+      p {
+         line-height: 2rem;
+         letter-spacing: 1.2px;
+         margin-top: -.5rem;
+      }
+   }
+   .test2 {
+      font-size: 2rem;
+      p {
+         margin-top: 2rem;
+         letter-spacing: 1.2px;
+         line-height: 2.5rem;
+      }
+   }
+   .test3 {
+      font-size: 1.5rem;
+      p {
+         letter-spacing: 1.2px;
+         line-height: 2rem;
+      }
    }
    .testimonial {
       margin: 1rem 0rem 3rem 0rem;
+      height: 20rem;
       padding: 5rem 3rem;
-      background-color: #FFF;
+      background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119,119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(80, 79, 79, 0.9));
+      color: pink;
+      text-shadow: 2px 2px 2px #000;
+      transition: all 0.8s;
+      border-radius: 10px;
       // box-shadow: 2px 3px 15px #000;
       p {
-         line-height: 2rem;
+         transition: all 0.8s;
+         // line-height: 2rem;
          font-weight: 700;
       }
       &:hover {
-         background-color: #000;
+         background: linear-gradient(135deg, rgba(119, 119,119, 0.9), rgba(83, 83, 83, 0.9), rgba(77, 76, 76, 0.9) , rgba(160, 158, 158, 0.9),  rgba(172, 171, 171, 0.9));
          transition: all 0.8s;
          p {
-            color: pink;
+            transition: all 0.8s;
+            color: #fff;
+            text-shadow: 2px 3px 3px #000;
          }
       }
    }
@@ -246,4 +335,49 @@
 }
 .slick-next:before {
   color: #000;
+}
+
+.productMain {
+   h2 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin: 2rem 0 1rem 0;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+   }
+}
+.productSection {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 90%;
+   margin: 0 auto;
+   padding: 1rem 0;
+   .productContainer {
+      width: 33%;
+      background-color: white;
+      padding: 3rem;
+      border-radius: 20px;
+      border: 1px solid rgb(194, 192, 192);
+      .productSoon {
+         width: 140%;
+         height: 20rem;
+         margin-top: 10rem;
+         margin-left: -4rem;
+         // background-color: pink;
+         img {
+            width: 100%;
+            transform: rotate(45deg);
+         }
+         p {
+            font-size: 5rem;
+            font-weight: 700;
+            text-align: center;
+         }
+      }
+      &:hover {
+         transform: scale(1.1);
+         transition: all 0.7s;
+      }
+   }
 }
