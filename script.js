@@ -38,17 +38,20 @@ app.services = [
             name: "Classic Lash Extension",
             price: 50.00,
             duration: "45mins",
-            class: "refill1"
+            class: "refill1",
+            info: "Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a Full Set"
          }, {
             name: "Hybrid Lash Extensions",
             price: 65.00,
             duration: "45mins",
-            class: "refill2"
+            class: "refill2",
+            info: " Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a full Set"
          }, {
             name: "Volume Lash Extensions",
             price: 50.00,
             duration: "45mins",
-            class: "refill3"
+            class: "refill3",
+            info: "Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a full Set"
          }
       ]
    }, {
@@ -60,12 +63,16 @@ app.services = [
             name: "No Tint",
             price: 60.00,
             duration: "45mins",
-            class: "brow1"
+            image: "BrowLam.jpg",
+            class: "brow1",
+            info: "Semi-permanent treatment that naturally lifts your brow hair to achieve a fuller and more uniform brow look. (Last 4-12 weeks)"
          }, {
             name: "With Tint",
             price: 80.00,
             duration: "15mins",
+            image: "browTint.jpg",
             class: "brow2",
+            info: "Semi permanent treatment that naturally lifts your brow hair to achieve a fuller and more uniform brow look. Tint can only be applied a week later to avoid overprocessing brow hairs. Tinting your brows provides a more uniform and shaper appearance. (Last 4-12 weeks) ",
             tip: "*Note* - Tinting can be done 1 week AFTER Brow Lamination"
          }
       ]
@@ -78,12 +85,16 @@ app.services = [
             name: "Full Body",
             price: 45.00,
             duration: "10mins",
-            class: "spray1"
+            image: "tan.jpg",
+            class: "spray1",
+            info: "Choose from 4 shades Latte,Espresso,Moka & Hot Chocolate. (Lasts 2-3 weeks)"
          }, {
             name: "Extra Coat",
             price: 10.00,
             duration: "10mins",
-            class: "spray2"
+            image: "tan.jpg",
+            class: "spray2",
+            info: "Additional Spray Tan coat"
          }
       ]
    }, {
@@ -95,7 +106,9 @@ app.services = [
             name: "Cosmetic Whitening",
             price: 100.00,
             duration: "1hr",
-            class: "teeth1"
+            image: "teethWhitening.jpg",
+            class: "teeth1",
+            info: "Cosmetic Teeth Whitening is performed using LED blue light to activate the Hydrogen Peroxide gel that is applied gently to your teeth to get rid of those pesky stains and to achieve a brighter & white smile! All products used are approved by Health Canada. (Last 2-6 months depending on aftercare)"
          }
       ]
    }, {
@@ -107,12 +120,16 @@ app.services = [
             name: "Full Glam",
             price: 85.00,
             duration: "2hrs",
-            class: "makeup1"
+            image: "glamMakeup.jpeg",
+            class: "makeup1",
+            info: "The Ultra Glam Makeup application focuses on creating a look that makes you POP.  If you’re looking for a more contoured & glowy skin look paired with a Smokey eye, this application is best suited for you!"
          }, {
             name: "Natural",
             price: 65.00,
             duration: "1hr 30mins",
-            class: "makeup1"
+            image: "naturalMakeup.jpeg",
+            class: "makeup1",
+            info: "What we like to call the “Barely Even There” Makeup application that focuses on enhancing your natural features. This type of application is best suited for minimal makeup looks"
          }
       ]
    }
@@ -125,7 +142,7 @@ app.getServices = () => {
       console.log(stuff)
       $('.allServices').append(`
          <div class="serviceContainer ${stuff.id}"> 
-            <h3>${stuff.service}</h3>
+            <h3 id="${stuff.id}">${stuff.service}</h3>
             <p class="serviceInfo">${stuff.info}</p>
             <div class="productType">
                ${stuff.type.map((moreStuff)=>{
@@ -148,6 +165,60 @@ app.getServices = () => {
       `)
    })
 }
+
+$('.productAlert1').on('click', function () {
+   Swal.fire({
+      title: 'SO Mulberry Silk Eyemask',
+      text: 'The only type of PILLOWTALK you need. Made with 100% Mulberry Silk our eyemask provides benefits for both your hair and skin.This eyemask will help keep your skin smooth & moisturized while reducing the development of wrinkles and creases around your eyes. Most importantly silk goes hand in hand with both your lashes & lash extensions, it protects your lashes and helps them keep intact. We want to make sure your pretty little eyes get the love and protection it needs! And how can I forget our eyemasks block out the sun to help you get that beauty sleep YOU deserve!',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mxcabrera.github.io/soBeautifulCo/assets/logo.JPG',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.productAlert2').on('click', function () {
+   Swal.fire({
+      title: 'Natural hair growth serum',
+      text: 'Lash + Brow by SO is a luscious serum that includes high quality natural ingriedients to help stimulate hair growth. This serum is a non drip formula that was designed to deep condition your lash & brow  hairs  while repairing your natual hair growth. Lash + Brow by SO serum helps promote longer and fuller lash & brow hair  all thanks to a combination of nourshing oils & natural ingriedients. This serum is to be used daily to receive best results! Directions: Apply once daily on Lash & Brow Hairs for best results. (You can apply twice if needed) Recommended to be applied right before bed.Please keep in mind Lash serum results take time.Ensure you are applying it daily for best results! Note, If using with lash extensions use a lip applicator wand and apply it on your upper lash line.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mxcabrera.github.io/soBeautifulCo/assets/logo.JPG',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+$('.morePDirection').on('click', function () {
+   Swal.fire({
+      title: 'Natural hair growth serum',
+      text: 'Directions: Apply once daily on Lash & Brow Hairs for best results. (You can apply twice if needed) Recommended to be applied right before bed.Please keep in mind Lash serum results take time.Ensure you are applying it daily for best results! Note, If using with lash extensions use a lip applicator wand and apply it on your upper lash line.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mxcabrera.github.io/soBeautifulCo/assets/logo.JPG',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+$('.morePIngredients').on('click', function () {
+   Swal.fire({
+      title: 'Natural hair growth serum',
+      text: 'Ingredients: CERA ALBA,RICINUS COMMUNIS SEED OIL,CAMELLIA OLEIFERA SEED OIL,GLYCYRRHIZA GLABRA ROOT,HELIANTHUS ANNUS SEED OIL,ARGANIA SPINOSA KERNEL OIL,URTICA DIOICA LEAF EXTRACT,DL-ALPHA TOCOPHEROL,CITRUS AURANTIUM DULCIS,GLYCERYL MONOCAPRYLATE (AND) GLYCERYL MONOUNDECYLENATE (NATURAL PRESERVATIVE). -----------------------------------------------------------------------------------------------Silicone Free / Pregnancy Safe / Cruelty Free / Natural Ingreidients ----------------------------------------------------------------------------------------------- As it is rare to see a reaction to our products, it is advised a skin patch allergy test is suggested. Please place a small piece of product on skin. If irritation occurs discontinue product.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mxcabrera.github.io/soBeautifulCo/assets/logo.JPG',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
 
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');

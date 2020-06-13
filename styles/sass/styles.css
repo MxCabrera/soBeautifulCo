@@ -571,6 +571,7 @@ header h2 {
 
 .serviceContainer .productType .serviceImage img {
   width: 100%;
+  height: 20rem;
 }
 
 .serviceContainer .productType .serviceInfo {
@@ -599,6 +600,7 @@ header h2 {
   padding: 2rem;
   border-radius: 10px;
   min-width: 30%;
+  width: 33%;
 }
 
 .individualProduct:hover {
@@ -759,6 +761,7 @@ header h2 {
 .contactSection form label input,
 .contactSection form label textarea {
   padding: 0.5rem;
+  border-radius: 5px;
   background-color: #FDF6F0;
   border: 1px solid #000;
   width: 100%;
@@ -857,11 +860,10 @@ header h2 {
 }
 
 .carousel h1 {
-  color: white;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 3rem;
-  text-shadow: -1px 5px 7px #000;
   margin: 2rem auto;
 }
 
@@ -890,6 +892,7 @@ header h2 {
 }
 
 .carousel .test3 p {
+  margin-top: -.5rem;
   letter-spacing: 1.2px;
   line-height: 2rem;
 }
@@ -898,12 +901,11 @@ header h2 {
   margin: 1rem 0rem 3rem 0rem;
   height: 20rem;
   padding: 5rem 3rem;
-  background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(80, 79, 79, 0.9));
+  background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119, 119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
   color: pink;
   text-shadow: 2px 2px 2px #000;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  border-radius: 10px;
 }
 
 .carousel .testimonial p {
@@ -913,7 +915,7 @@ header h2 {
 }
 
 .carousel .testimonial:hover {
-  background: linear-gradient(135deg, rgba(119, 119, 119, 0.9), rgba(83, 83, 83, 0.9), rgba(77, 76, 76, 0.9), rgba(160, 158, 158, 0.9), rgba(172, 171, 171, 0.9));
+  background: linear-gradient(135deg, rgba(119, 119, 119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9), rgba(160, 158, 158, 0.9), rgba(172, 171, 171, 0.9));
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -964,10 +966,24 @@ header h2 {
   border: 1px solid #c2c0c0;
 }
 
+.productSection .productContainer .productImage {
+  width: 100%;
+}
+
+.productSection .productContainer .productImage img {
+  width: 100%;
+}
+
+.productSection .productContainer a button {
+  padding: .5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
 .productSection .productContainer .productSoon {
   width: 140%;
-  height: 20rem;
-  margin-top: 10rem;
+  height: 10rem;
+  margin-top: 6rem;
   margin-left: -4rem;
 }
 
@@ -988,6 +1004,61 @@ header h2 {
           transform: scale(1.1);
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+}
+
+.serviceNav h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.serviceNav nav {
+  background-color: #FDF6F0;
+  margin-top: 1rem;
+}
+
+.serviceNavFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.serviceNavFlex li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.serviceNavFlex li a {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.serviceNavFlex li a:hover {
+  background-color: pink;
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+}
+
+.final {
+  width: 90%;
+  margin: 1rem auto;
 }
 
 footer div {
