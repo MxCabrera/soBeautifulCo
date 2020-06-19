@@ -39,18 +39,21 @@ app.services = [
             price: 50.00,
             duration: "45mins",
             class: "refill1",
+            image: "refill.png",
             info: "Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a Full Set"
          }, {
             name: "Hybrid Lash Extensions",
             price: 65.00,
             duration: "45mins",
             class: "refill2",
+            image: "refill.png",
             info: " Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a full Set"
          }, {
             name: "Volume Lash Extensions",
             price: 50.00,
             duration: "45mins",
             class: "refill3",
+            image: "refill.png",
             info: "Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a full Set"
          }
       ]
@@ -193,10 +196,25 @@ $('.productAlert2').on('click', function () {
       // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
    })
 })
+
+$('.productAlert3').on('click', function () {
+   Swal.fire({
+      title: 'SO Body Scrub Ingredients',
+      text: 'Shea butter, organic sugar, coconut oil, rice bran oil, apricot kernal oil, grapeseed oil, cocoa butter, emulsifying wax (plant-based thickener), coffee grinds, grape seed fruit extract(natural preservative)         ----------------------------------------------------------------------------------------------- Directions: Apply to body using small circular movements. Rinse off with warm water. Doubles as a moisturizer. Keep out of direct sunlight',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mxcabrera.github.io/soBeautifulCo/assets/logo.JPG',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
 $('.morePDirection').on('click', function () {
    Swal.fire({
-      title: 'Natural hair growth serum',
-      text: 'Directions: Apply once daily on Lash & Brow Hairs for best results. (You can apply twice if needed) Recommended to be applied right before bed.Please keep in mind Lash serum results take time.Ensure you are applying it daily for best results! Note, If using with lash extensions use a lip applicator wand and apply it on your upper lash line.',
+      title: 'Directions',
+      text: 'Apply once daily on Lash & Brow Hairs for best results. (You can apply twice if needed) Recommended to be applied right before bed.Please keep in mind Lash serum results take time.Ensure you are applying it daily for best results! Note, If using with lash extensions use a lip applicator wand and apply it on your upper lash line.',
       // icon: 'info',
       confirmButtonText: 'Exit',
       animation: false,
@@ -208,8 +226,8 @@ $('.morePDirection').on('click', function () {
 })
 $('.morePIngredients').on('click', function () {
    Swal.fire({
-      title: 'Natural hair growth serum',
-      text: 'Ingredients: CERA ALBA,RICINUS COMMUNIS SEED OIL,CAMELLIA OLEIFERA SEED OIL,GLYCYRRHIZA GLABRA ROOT,HELIANTHUS ANNUS SEED OIL,ARGANIA SPINOSA KERNEL OIL,URTICA DIOICA LEAF EXTRACT,DL-ALPHA TOCOPHEROL,CITRUS AURANTIUM DULCIS,GLYCERYL MONOCAPRYLATE (AND) GLYCERYL MONOUNDECYLENATE (NATURAL PRESERVATIVE). -----------------------------------------------------------------------------------------------Silicone Free / Pregnancy Safe / Cruelty Free / Natural Ingreidients ----------------------------------------------------------------------------------------------- As it is rare to see a reaction to our products, it is advised a skin patch allergy test is suggested. Please place a small piece of product on skin. If irritation occurs discontinue product.',
+      title: 'Ingredients',
+      text: 'CERA ALBA,RICINUS COMMUNIS SEED OIL,CAMELLIA OLEIFERA SEED OIL,GLYCYRRHIZA GLABRA ROOT,HELIANTHUS ANNUS SEED OIL,ARGANIA SPINOSA KERNEL OIL,URTICA DIOICA LEAF EXTRACT,DL-ALPHA TOCOPHEROL,CITRUS AURANTIUM DULCIS,GLYCERYL MONOCAPRYLATE (AND) GLYCERYL MONOUNDECYLENATE (NATURAL PRESERVATIVE). -----------------------------------------------------------------------------------------------Silicone Free / Pregnancy Safe / Cruelty Free / Natural Ingreidients ----------------------------------------------------------------------------------------------- As it is rare to see a reaction to our products, it is advised a skin patch allergy test is suggested. Please place a small piece of product on skin. If irritation occurs discontinue product.',
       // icon: 'info',
       confirmButtonText: 'Exit',
       animation: false,

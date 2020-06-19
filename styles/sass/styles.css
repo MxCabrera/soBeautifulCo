@@ -461,6 +461,10 @@ header h2 {
   }
 }
 
+.indexTitle {
+  margin-top: 33rem;
+}
+
 .bookButton {
   padding: 25px 35px;
   text-decoration: none;
@@ -471,8 +475,8 @@ header h2 {
 
 .wrap {
   position: absolute;
-  top: 70%;
-  left: 70%;
+  top: 11%;
+  left: 74%;
   text-align: center;
   z-index: 1;
 }
@@ -513,107 +517,102 @@ header h2 {
           transform: translateY(3px);
 }
 
-.mainContact {
-  height: 100vh;
-}
-
-.mainService {
-  background-color: #FDF6F0;
-}
-
-.serviceContainer {
-  background-color: white;
+#wrapper {
   width: 90%;
-  margin: 2rem auto;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 2rem;
-  position: relative;
+  margin: 0 auto;
 }
 
-.serviceContainer h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  text-shadow: 2px 3px 5px #b98089;
-}
-
-.serviceContainer .serviceInfo {
-  color: grey;
-  margin-bottom: 1rem;
-}
-
-.serviceContainer .productType {
+.carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 5rem;
-}
-
-.serviceContainer .productType .serviceName {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: pink;
-  margin-bottom: 1rem;
-}
-
-.serviceContainer .productType .serviceImage {
-  width: 100%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
   text-align: center;
 }
 
-.serviceContainer .productType .serviceImage img {
-  width: 100%;
-  height: 20rem;
-}
-
-.serviceContainer .productType .serviceInfo {
-  margin: 1rem 0;
-}
-
-.serviceContainer button {
-  margin-top: 1rem;
-  padding: 1rem 1.5rem;
+.carousel h1 {
+  color: #000;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 1rem;
-  right: 45%;
-  -webkit-box-shadow: 0px 2px 5px #000;
-          box-shadow: 0px 2px 5px #000;
-  border-radius: 15px;
-  border: none;
+  letter-spacing: 1.2px;
+  font-size: 3rem;
+  margin: 2rem auto;
 }
 
-.serviceContainer button:hover {
-  background-color: pink;
+.carousel .test1 {
+  font-size: 1.5rem;
 }
 
-.individualProduct {
-  border: 1px solid #bdbbbb;
-  padding: 2rem;
-  border-radius: 10px;
-  min-width: 30%;
-  width: 33%;
+.carousel .test1 p {
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+  margin-top: -.5rem;
 }
 
-.individualProduct:hover {
-  background-color: #FDF6F0;
-  -webkit-box-shadow: 5px 5px 10px #000;
-          box-shadow: 5px 5px 10px #000;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+.carousel .test2 {
+  font-size: 2rem;
+}
+
+.carousel .test2 p {
+  margin-top: 2rem;
+  letter-spacing: 1.2px;
+  line-height: 2.5rem;
+}
+
+.carousel .test3 {
+  font-size: 1.5rem;
+}
+
+.carousel .test3 p {
+  margin-top: -.5rem;
+  letter-spacing: 1.2px;
+  line-height: 2rem;
+}
+
+.carousel .testimonial {
+  margin: 1rem 0rem 3rem 0rem;
+  height: 20rem;
+  padding: 5rem 3rem;
+  background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119, 119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
+  color: pink;
+  text-shadow: 2px 2px 2px #000;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.carousel .testimonial p {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  font-weight: 300;
+}
+
+.carousel .testimonial:hover {
+  background: linear-gradient(135deg, rgba(119, 119, 119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9), rgba(160, 158, 158, 0.9), rgba(172, 171, 171, 0.9));
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.carousel .testimonial:hover p {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  color: #fff;
+  text-shadow: 2px 3px 3px #000;
+}
+
+.slick-prev:before {
+  color: #000;
+}
+
+.slick-next:before {
+  color: #000;
 }
 
 .mainTeam {
   position: relative;
-  height: 188rem;
+  height: 193rem;
 }
 
 .mainTeam .teamAbsolute {
@@ -703,7 +702,7 @@ header h2 {
 
 .teamInfo .flexSocial p {
   margin: 1rem 0.5rem;
-  background-color: white;
+  background-color: #FDF6F0;
 }
 
 .teamInfo .flexSocial p a {
@@ -715,10 +714,256 @@ header h2 {
   font-size: 2rem;
 }
 
+.teamInfo .flexSocial p a i span {
+  text-shadow: none;
+  color: #636262;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .teamInfo .flexSocial p a:hover {
-  color: pink;
   -webkit-transform: all 0.7s;
           transform: all 0.7s;
+  color: pink;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.teamInfo .flexSocial p a:hover span {
+  text-decoration: underline;
+  color: #e4a3ae;
+}
+
+.mainService {
+  background-color: #FDF6F0;
+}
+
+.serviceContainer {
+  background-color: white;
+  width: 90%;
+  margin: 2rem auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+}
+
+.serviceContainer h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 5px #b98089;
+}
+
+.serviceContainer .serviceInfo {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.serviceContainer .productType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.serviceContainer .productType .serviceName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e4a1ac;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 1px #000;
+  letter-spacing: 1.3px;
+}
+
+.serviceContainer .productType .serviceImage {
+  width: 100%;
+  text-align: center;
+}
+
+.serviceContainer .productType .serviceImage img {
+  width: 100%;
+  height: 20rem;
+}
+
+.serviceContainer .productType .serviceInfo {
+  margin: 1rem 0;
+}
+
+.serviceContainer button {
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1rem;
+  right: 45%;
+  -webkit-box-shadow: 0px 2px 5px #000;
+          box-shadow: 0px 2px 5px #000;
+  border-radius: 25px;
+  border: none;
+}
+
+.serviceContainer button:hover {
+  background-color: pink;
+}
+
+.serviceNav h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.serviceNav nav {
+  background-color: #FDF6F0;
+  margin-top: 1rem;
+}
+
+.serviceNavFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.serviceNavFlex li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.serviceNavFlex li a {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.serviceNavFlex li a:hover {
+  background-color: pink;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.individualProduct {
+  border: 1px solid #bdbbbb;
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 30%;
+  width: 33%;
+}
+
+.individualProduct:hover {
+  background-color: #FDF6F0;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.productMain h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.productSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 6rem auto 3rem auto;
+  padding: 1rem 0;
+}
+
+.productSection .productContainer {
+  width: 33%;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid #c2c0c0;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+}
+
+.productSection .productContainer .productImage {
+  width: 100%;
+}
+
+.productSection .productContainer .productImage img {
+  width: 100%;
+  height: 15rem;
+}
+
+.productSection .productContainer p {
+  margin: 1rem auto;
+}
+
+.productSection .productContainer a button {
+  padding: .5rem;
+  border-radius: 20px;
+  width: 46%;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin: 0.2rem;
+  border: none;
+  background-color: #c5c2c2;
+  -webkit-box-shadow: 2px 2px 4px #000;
+          box-shadow: 2px 2px 4px #000;
+}
+
+.productSection .productContainer a button:hover {
+  background-color: pink;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.productSection .productContainer a .buyProduct {
+  background-color: black;
+  color: white;
+}
+
+.productSection .productContainer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.final {
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .contactSection {
@@ -751,6 +996,7 @@ header h2 {
 
 .contactSection form h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contactSection form label {
@@ -767,6 +1013,10 @@ header h2 {
   width: 100%;
 }
 
+.contactSection form label textarea {
+  height: 10rem;
+}
+
 .contactSection .calendly {
   width: 50%;
   padding: 2rem;
@@ -781,6 +1031,7 @@ header h2 {
 .contactSection .calendly h3 {
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .submit {
@@ -819,7 +1070,9 @@ header h2 {
 
 .contactInstructions .warning {
   text-align: center;
-  margin: 2rem 0;
+  margin: 4rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: underline;
 }
@@ -832,6 +1085,11 @@ header h2 {
   width: 45%;
 }
 
+.contactInstructions .flex h2 i {
+  color: pink;
+  text-shadow: 1px 1px 3px #000;
+}
+
 .contactInstructions .cash {
   text-align: center;
   margin-top: 1rem;
@@ -842,223 +1100,34 @@ header h2 {
   text-align: center;
 }
 
-#wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.carousel h1 {
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-size: 3rem;
-  margin: 2rem auto;
-}
-
-.carousel .test1 {
-  font-size: 1.5rem;
-}
-
-.carousel .test1 p {
-  line-height: 2rem;
-  letter-spacing: 1.2px;
-  margin-top: -.5rem;
-}
-
-.carousel .test2 {
+.bookAppoint {
   font-size: 2rem;
-}
-
-.carousel .test2 p {
-  margin-top: 2rem;
-  letter-spacing: 1.2px;
-  line-height: 2.5rem;
-}
-
-.carousel .test3 {
-  font-size: 1.5rem;
-}
-
-.carousel .test3 p {
-  margin-top: -.5rem;
-  letter-spacing: 1.2px;
-  line-height: 2rem;
-}
-
-.carousel .testimonial {
-  margin: 1rem 0rem 3rem 0rem;
-  height: 20rem;
-  padding: 5rem 3rem;
-  background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119, 119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
-  color: pink;
-  text-shadow: 2px 2px 2px #000;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.carousel .testimonial p {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  font-weight: 700;
-}
-
-.carousel .testimonial:hover {
-  background: linear-gradient(135deg, rgba(119, 119, 119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9), rgba(160, 158, 158, 0.9), rgba(172, 171, 171, 0.9));
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.carousel .testimonial:hover p {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  color: #fff;
-  text-shadow: 2px 3px 3px #000;
-}
-
-.slick-prev:before {
-  color: #000;
-}
-
-.slick-next:before {
-  color: #000;
-}
-
-.productMain h2 {
-  font-size: 2.2rem;
-  text-align: center;
-  margin: 2rem 0 1rem 0;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-}
-
-.productSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 90%;
-  margin: 0 auto;
-  padding: 1rem 0;
-}
-
-.productSection .productContainer {
-  width: 33%;
-  background-color: white;
-  padding: 3rem;
-  border-radius: 20px;
-  border: 1px solid #c2c0c0;
-}
-
-.productSection .productContainer .productImage {
-  width: 100%;
-}
-
-.productSection .productContainer .productImage img {
-  width: 100%;
-}
-
-.productSection .productContainer a button {
-  padding: .5rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-}
-
-.productSection .productContainer .productSoon {
-  width: 140%;
-  height: 10rem;
-  margin-top: 6rem;
-  margin-left: -4rem;
-}
-
-.productSection .productContainer .productSoon img {
-  width: 100%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.productSection .productContainer .productSoon p {
-  font-size: 5rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.productSection .productContainer:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
-}
-
-.serviceNav h2 {
-  text-align: center;
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin-top: 3rem;
-}
-
-.serviceNav nav {
-  background-color: #FDF6F0;
-  margin-top: 1rem;
-}
-
-.serviceNavFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 70%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.serviceNavFlex li {
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.serviceNavFlex li a {
-  padding: 0.5rem;
-  border: 1px solid #000;
-  text-decoration: none;
-  text-transform: uppercase;
   color: black;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.serviceNavFlex li a:hover {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin: 2rem 7.8rem;
+  padding: 1rem;
+  border-radius: 20px;
   background-color: pink;
-  -webkit-box-shadow: 3px 3px 5px #000;
-          box-shadow: 3px 3px 5px #000;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
 }
 
-.final {
-  width: 90%;
+.bookAppoint:hover {
+  background-color: #FDF6F0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #a19f9f;
+}
+
+.appPic {
+  width: 30%;
   margin: 1rem auto;
+}
+
+.appPic img {
+  width: 100%;
 }
 
 footer div {
