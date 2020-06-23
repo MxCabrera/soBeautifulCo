@@ -274,7 +274,7 @@ body {
 
 nav {
   height: 10vh;
-  min-height: 3.5rem;
+  min-height: 4rem;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1637,7 +1637,7 @@ header h2 {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  margin: 2rem 9rem;
+  margin: 2rem 11.5rem;
   padding: 1rem;
   border-radius: 20px;
   background-color: pink;
@@ -1671,6 +1671,162 @@ header h2 {
   color: #757374;
   text-shadow: 2px 2px 2px pink;
   width: 25%;
+}
+
+@media (max-width: 1425px) {
+  .bookAppoint {
+    width: 60%;
+    margin: 2rem 6.5rem;
+  }
+}
+
+@media (max-width: 1382px) {
+  .appPic {
+    width: 50%;
+  }
+  .thanks {
+    width: 30%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .bookAppoint {
+    margin: 2rem 4.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .thanks {
+    width: 31%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .appPic {
+    width: 70%;
+  }
+  .bookAppoint {
+    width: 70%;
+  }
+  .contactSection .calendly,
+  .contactSection form {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContact {
+    background-position: 90% 10%;
+  }
+  .headerContact .wrapper h2 {
+    font-size: 3.5rem;
+    margin-top: 3rem;
+  }
+  .contactInstructions .warning {
+    font-size: 2rem;
+  }
+  .contactInstructions .flex h2 {
+    font-size: 1.3rem;
+  }
+  .contactNumber {
+    font-size: 1.3rem;
+  }
+  .cash {
+    font-size: 1.3rem;
+  }
+  .thanks {
+    width: 40%;
+    font-size: 1.1rem;
+  }
+  .appPic {
+    width: 90%;
+  }
+  .contactSection form,
+  .contactSection .calendly {
+    margin: 1rem;
+  }
+  .bookAppoint {
+    width: 95%;
+    margin: 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .headerContact {
+    background-position: 70% 10%;
+    height: 85vh;
+  }
+  .headerContact .wrapper h2 {
+    width: 70%;
+    font-size: 3rem;
+    margin-top: 2.3rem;
+  }
+  .contactInstructions .warning {
+    font-size: 1.7rem;
+    margin: 2.5rem 0 2rem 0;
+  }
+  .contactInstructions .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInstructions .flex h2 {
+    width: 95%;
+    margin: 0.5rem auto;
+    font-size: 1.1rem;
+  }
+  .contactNumber {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .cash {
+    font-size: 1.1rem;
+  }
+  .contactSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSection form,
+  .contactSection .calendly {
+    width: 95%;
+    margin: 0.5rem auto;
+  }
+  .bookAppoint {
+    margin: 2rem 1rem;
+    width: 90%;
+  }
+  .thanks {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .appPic {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerContact {
+    background-position: 40% 10%;
+  }
+  .headerContact .wrapper h2 {
+    font-size: 2.5rem;
+    margin-top: 1.8rem;
+  }
+  .contactInstructions .warning {
+    font-size: 1.5rem;
+  }
+  .contactSection form {
+    padding: 2rem 1rem;
+  }
+  .thanks {
+    width: 65%;
+    font-size: .8rem;
+  }
 }
 
 footer div {
