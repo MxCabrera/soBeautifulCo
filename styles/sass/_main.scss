@@ -261,6 +261,9 @@
 }
 
 @media (max-width: 400px) {
+   nav .navWrap .logo {
+      margin-top: 0.5rem;
+   }
    .headerLanding {
       height: 85vh;
       background-position: 20%;
