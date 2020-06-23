@@ -326,6 +326,7 @@ nav .navWrap .nav-links li a {
 .headerProducts {
   background-position: 50% -15%;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic5.jpg);
+  height: 88vh;
 }
 
 .headerTeam {
@@ -337,6 +338,7 @@ nav .navWrap .nav-links li a {
 .headerService {
   background-position: 50% 30%;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/services.jpeg);
+  height: 88vh;
 }
 
 header {
@@ -398,10 +400,9 @@ header h2 {
     top: 4%;
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
-    z-index: 2;
+    z-index: 200;
   }
   .nav-links {
-    position: fixed;
     background-color: #ffffff;
     height: 100vh;
     width: 100%;
@@ -451,7 +452,7 @@ header h2 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .headerLanding h2 {
     font-size: 2rem;
   }
@@ -534,11 +535,13 @@ header h2 {
   text-align: center;
 }
 
-.carousel h1 {
+.carousel h2 {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 3rem;
+  text-shadow: 2px 2px 5px #575555;
+  border-bottom: 2px solid #7c7c7c;
   margin: 2rem auto;
 }
 
@@ -610,9 +613,234 @@ header h2 {
   color: #000;
 }
 
+.social {
+  margin: 1rem auto 3rem auto;
+}
+
+.social a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.social a:hover {
+  color: pink;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: underline;
+}
+
+@media (max-width: 1130px) {
+  .wrap {
+    left: 70%;
+  }
+  .carousel .testimonial {
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrap {
+    left: 67%;
+  }
+  .headerLanding {
+    background-position: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    width: 60%;
+  }
+  .wrap {
+    left: 67%;
+  }
+  .bookButton {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrap {
+    left: 63%;
+  }
+  .indexTitle {
+    font-size: 3.5rem;
+    width: 60%;
+  }
+  .carousel h2 {
+    font-size: 2.5rem;
+  }
+  .carousel .test1 p {
+    font-size: 1.5rem;
+  }
+  .carousel .test2 {
+    font-size: 2rem;
+  }
+  .social a {
+    font-size: 1.2rem;
+  }
+  .footerInfo {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .bookButton {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrap {
+    left: 59%;
+  }
+  .indexTitle {
+    width: 75%;
+    font-size: 3rem;
+  }
+  .carousel h2 {
+    font-size: 2rem;
+  }
+  .carousel .test1 p,
+  .carousel .test3 p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .carousel .test2 {
+    font-size: 1.5rem;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrap {
+    left: 56%;
+  }
+  .bookButton {
+    padding: 20px 30px;
+  }
+  .carousel .test2 {
+    padding: 3rem 1rem 5rem 1rem;
+    margin-top: 5rem;
+  }
+  .carousel .test1,
+  .carousel .test2,
+  .carousel .test3 {
+    width: 90%;
+  }
+  .carousel h2 {
+    font-size: 1.7rem;
+  }
+  .carousel .test1 p,
+  .carousel .test3 p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .carousel .test2 p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .nav-links.open {
+    width: 100%;
+  }
+  .social a {
+    font-size: 0.9rem;
+  }
+  .footerInfo {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    left: 52%;
+  }
+  .bookButton {
+    padding: 20px 30px;
+  }
+  .headerLanding .indexTitle {
+    font-size: 2.5rem;
+  }
+  .carousel .test1 p,
+  .carousel .test3 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .carousel .test2 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .bookButton {
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerLanding {
+    height: 85vh;
+    background-position: 20%;
+  }
+  .headerLanding .indexTitle {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .wrap {
+    left: 48%;
+    top: 67%;
+  }
+  .bookButton {
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+  header h2 {
+    width: 65%;
+  }
+  .carousel .test2 {
+    margin-top: 7rem;
+  }
+  .carousel .test2 p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .carousel .test1 p,
+  .carousel .test3 p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .carousel .testimonial {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrap {
+    left: 43%;
+  }
+  .bookButton {
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrap {
+    left: 38%;
+  }
+  .headerLanding {
+    background-position: 25%;
+  }
+}
+
 .mainTeam {
   position: relative;
-  height: 193rem;
+  height: 200rem;
 }
 
 .mainTeam .teamAbsolute {
@@ -652,6 +880,7 @@ header h2 {
 .teamflex .headshot img {
   border-radius: 10px;
   width: 100%;
+  border: 5px solid grey;
 }
 
 .teamflex:hover {
@@ -679,6 +908,7 @@ header h2 {
 
 .teamInfo p {
   line-height: 1.5rem;
+  margin: 1rem auto;
 }
 
 .teamInfo .teamPosition {
@@ -716,8 +946,10 @@ header h2 {
 
 .teamInfo .flexSocial p a i span {
   text-shadow: none;
-  color: #636262;
-  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  color: #030303;
+  font-size: 1rem;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -732,6 +964,205 @@ header h2 {
 .teamInfo .flexSocial p a:hover span {
   text-decoration: underline;
   color: #e4a3ae;
+}
+
+@media (max-width: 1280px) {
+  .mainTeam {
+    height: 210rem;
+  }
+}
+
+@media (max-width: 1124px) {
+  .mainTeam {
+    height: 220rem;
+  }
+}
+
+@media (max-width: 1068px) {
+  .headerTeam {
+    height: 37rem;
+  }
+  .headerTeam .wrapper h2 {
+    width: 100%;
+  }
+  .mainTeam {
+    height: 230rem;
+  }
+  .teamInfo .flexSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1028px) {
+  .mainTeam {
+    height: 240rem;
+  }
+}
+
+@media (max-width: 958px) {
+  .mainTeam {
+    height: 250rem;
+  }
+}
+
+@media (max-width: 892px) {
+  .mainTeam {
+    height: 270rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .mainTeam {
+    height: 287rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerTeam {
+    height: 34rem;
+  }
+  .headerTeam .wrapper h2 {
+    font-size: 3.5rem;
+    margin-top: 3rem;
+  }
+  .mainTeam {
+    height: 190rem;
+  }
+  .mainTeam .teamAbsolute {
+    padding: 1rem 2rem;
+  }
+  .teamInfo h3 {
+    font-size: 1.5rem;
+  }
+  .teamInfo .teamPosition {
+    font-size: 1rem;
+  }
+  .teamInfo p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .flexSocial {
+    line-height: 0.9rem;
+  }
+  .teamInfo .flexSocial p a i span {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 712px) {
+  .mainTeam {
+    height: 200rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .mainTeam {
+    height: 210rem;
+  }
+}
+
+@media (max-width: 628px) {
+  .mainTeam {
+    height: 220rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerTeam {
+    height: 29rem;
+  }
+  .headerTeam .wrapper h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  .mainTeam {
+    height: 280rem;
+  }
+  .teamflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem auto;
+  }
+  .teamflex .headshot {
+    text-align: center;
+    width: 50%;
+  }
+  .teamflex .teamInfo {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainTeam {
+    height: 290rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .mainTeam {
+    height: 300rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerTeam {
+    background-position: 90% -5%;
+    height: 25rem;
+  }
+  .headerTeam .wrapper h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  .mainTeam {
+    height: 320rem;
+  }
+  .mainTeam .teamAbsolute {
+    width: 95%;
+    left: 2.5%;
+    padding: 1rem;
+  }
+  .teamflex .headshot {
+    width: 70%;
+  }
+}
+
+@media (max-width: 380px) {
+  .mainTeam {
+    height: 330rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .headerTeam {
+    background-position: 90% -60%;
+    height: 25rem;
+  }
+  .headerTeam .wrapper h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .mainTeam {
+    height: 341rem;
+  }
 }
 
 .mainService {
@@ -903,7 +1334,7 @@ header h2 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
-  margin: 6rem auto 3rem auto;
+  margin: 4rem auto 3rem auto;
   padding: 1rem 0;
 }
 
@@ -924,6 +1355,11 @@ header h2 {
 .productSection .productContainer .productImage img {
   width: 100%;
   height: 15rem;
+}
+
+.productSection .productContainer h3 {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .productSection .productContainer p {
@@ -964,6 +1400,100 @@ header h2 {
 .final {
   width: 90%;
   margin: 1rem auto;
+}
+
+@media (max-width: 1068px) {
+  .productSection .productContainer {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .productSection .productContainer {
+    padding: 1.5rem;
+  }
+  .productSection .productContainer a button {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .productSection .productContainer .productImage img {
+    height: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerProducts {
+    background-position: 50% 100%;
+  }
+  .headerProducts .wrapper h2 {
+    font-size: 3.3rem;
+    margin-top: 3rem;
+  }
+  .productSection .productContainer .productImage img {
+    height: 9rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .productSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .productSection .productContainer {
+    margin: 0.5rem auto;
+    width: 100%;
+  }
+  .productSection .productContainer a button {
+    width: 47%;
+    font-size: .8rem;
+  }
+  .productSection .productContainer .productImage img {
+    height: 25rem;
+  }
+  .final {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerProducts .wrapper h2 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+  }
+  .productSection .productContainer .productImage img {
+    height: 21rem;
+  }
+  .productMain h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .productSection {
+    margin: 2rem auto 3rem auto;
+  }
+  .productSection .productContainer .productImage img {
+    height: 18rem;
+  }
+  .headerProducts .wrapper h2 {
+    font-size: 2.3rem;
+    margin-top: 1.5rem;
+  }
+  .productMain h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .productSection .productContainer .productImage img {
+    height: 15rem;
+  }
+  .productSection .productContainer a button {
+    width: 43%;
+    font-size: .6rem;
+  }
 }
 
 .contactSection {
@@ -1070,7 +1600,7 @@ header h2 {
 
 .contactInstructions .warning {
   text-align: center;
-  margin: 4rem 0;
+  margin: 2.5rem 0 4rem 0;
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1098,20 +1628,22 @@ header h2 {
 
 .contactInstructions .contactNumber {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .bookAppoint {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  margin: 2rem 7.8rem;
+  margin: 2rem 9rem;
   padding: 1rem;
   border-radius: 20px;
   background-color: pink;
   -webkit-box-shadow: 2px 2px 10px #000;
           box-shadow: 2px 2px 10px #000;
+  text-transform: uppercase;
 }
 
 .bookAppoint:hover {
@@ -1128,6 +1660,17 @@ header h2 {
 
 .appPic img {
   width: 100%;
+}
+
+.thanks {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: #757374;
+  text-shadow: 2px 2px 2px pink;
+  width: 25%;
 }
 
 footer div {

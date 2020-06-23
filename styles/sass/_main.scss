@@ -9,15 +9,13 @@
    flex-direction: column;
    margin: 0 auto;
    text-align: center;
-   h1 {
+   h2 {
       color: #000;
-      
       text-transform: uppercase;
       letter-spacing: 1.2px;
       font-size: 3rem;
-      // text-shadow: -1px 5px 7px #000;
-      // border-bottom: 5px solid #000;
-      // width: 25.5%;
+      text-shadow: 2px 2px 5px rgb(87, 85, 85);
+      border-bottom: 2px solid rgb(124, 124, 124);
       margin: 2rem auto;
    }
    .test1 {
@@ -73,4 +71,249 @@
 }
 .slick-next:before {
   color: #000;
+}
+
+
+.social {
+   margin: 1rem auto 3rem auto;
+   a {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      &:hover {
+         color: pink;
+         transition: all 0.3s;
+         text-decoration: underline;
+      }
+   }
+}
+
+
+@media (max-width: 1130px) {
+   .wrap {
+      left: 70%;
+   }
+   .carousel .testimonial {
+      height: auto;
+   }
+}
+
+@media (max-width: 1000px) {
+   .wrap {
+      left: 67%;
+   }
+   .headerLanding {
+      background-position: 50%;
+   }
+}
+
+@media (max-width: 900px) {
+   .nav-links {
+      width: 60%;
+   }
+   .wrap {
+      left: 67%;
+   }
+   .bookButton {
+      font-size: 30px;
+   }
+}
+
+@media (max-width: 800px) {
+   .wrap {
+      left: 63%;
+   }
+   .indexTitle {
+      font-size: 3.5rem;
+      width: 60%;
+   }
+   .carousel h2 {
+      font-size: 2.5rem;
+   }
+
+   .carousel .test1 p{
+      font-size: 1.5rem;
+   }
+   .carousel .test2 {
+      font-size: 2rem;
+   }
+   .social {
+      a {
+         font-size: 1.2rem;
+      }
+   }
+   .footerInfo {
+      font-size: 10px;
+   }
+
+}
+
+
+@media (max-width: 700px) {
+   .bookButton {
+      font-size: 25px; 
+   }
+}
+
+@media (max-width: 650px) {
+   .wrap {
+      left: 59%;
+   }
+   .indexTitle {
+      width: 75%;
+      font-size: 3rem;
+   }
+   .carousel {
+      h2 {
+         font-size: 2rem;
+      }
+      .test1 p,
+      .test3 p {
+         font-size: 1.2rem;
+         line-height: 1.5rem;
+      }
+      .test2 {
+         font-size: 1.5rem;
+         margin-top: 4.5rem;
+      }
+   }
+   
+}
+
+
+@media (max-width: 550px) {
+   .wrap {
+      left: 56%;
+   }
+   .bookButton {
+      padding: 20px 30px;
+   }
+   .carousel {
+      .test2 {
+         padding: 3rem 1rem 5rem 1rem;
+         margin-top: 5rem;
+      }
+      .test1,
+      .test2,
+      .test3 {
+         width: 90%;
+      }
+      h2 {
+         font-size: 1.7rem;
+      }
+      .test1 p,
+      .test3 p {
+         font-size: 1.2rem; 
+         line-height: 1.4rem;
+      }
+      .test2 p {
+         font-size: 1.5rem;
+         line-height: 1.7rem;
+      }
+   }
+   .nav-links.open {
+      width: 100%;
+   }
+   .social {
+      a {
+         font-size: 0.9rem;
+      }
+   }
+   .footerInfo {
+      font-size: 8px;
+   }
+}
+
+@media (max-width: 500px) {
+   .wrap {
+      left: 52%;
+   }
+   .bookButton {
+      padding: 20px 30px;
+   }
+   .headerLanding {
+      .indexTitle {
+         font-size: 2.5rem;
+      }
+   }
+   .carousel {
+      .test1 p,
+      .test3 {
+         font-size: 1rem;
+         line-height: 1.2rem;
+      }
+      .test2 {
+         font-size: 1.35rem;
+      }
+   }
+}
+
+
+@media (max-width: 450px) {
+
+   .bookButton {
+      font-size: 20px;
+      padding: 20px 30px;
+   }
+}
+
+@media (max-width: 400px) {
+   .headerLanding {
+      height: 85vh;
+      background-position: 20%;
+      .indexTitle {
+         margin-top: 1rem;
+         font-size: 2rem;
+      }
+   }
+   .wrap {
+      left: 48%;
+      top: 67%;
+   }
+   .bookButton {
+      font-size: 20px;
+      padding: 20px 30px;
+   }
+   header h2 {
+      width: 65%;
+   }
+   .carousel {
+      .test2 {
+         margin-top: 7rem;
+         p {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+         }
+      }
+      .test1 p,
+      .test3 p {
+         font-size: 1rem;
+         line-height: 1.2rem;
+      }
+      .testimonial {
+         padding: 3rem 2rem;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .wrap {
+      left: 43%;
+   }
+   .bookButton {
+      font-size: 20px;
+      padding: 20px 30px;
+   }
+}
+
+@media (max-width: 320px) {
+   .wrap {
+      left: 38%;
+   }
+   .headerLanding {
+      background-position: 25%;
+   }
 }

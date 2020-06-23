@@ -48,6 +48,7 @@ nav {
    // background-image: url(../../assets/pic5.jpg);
    background-position: 50% -15%;
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic5.jpg);
+   height: 88vh;
 }
 
 .headerTeam {
@@ -61,6 +62,7 @@ nav {
    // background-image: url(../../assets/pic3.jpg);
    background-position: 50% 30%;
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/services.jpeg);
+   height: 88vh;
 }
 
 header {
@@ -118,10 +120,10 @@ header {
       right: 5%;
       top: 4%;
       transform: translate(-5%, -50%);
-      z-index: 2;
+      z-index: 200;
    }
    .nav-links {
-      position: fixed;
+      // position: fixed;
       background-color: #ffffff;
       height: 100vh;
       width: 100%;
@@ -163,7 +165,7 @@ header {
    }
 }
 
-@media screen and(max-width: 500px) {
+@media screen and(max-width: 400px) {
    .headerLanding {
       h2 {
          font-size: 2rem;
@@ -192,8 +194,6 @@ header {
   position: absolute;
   top: 11%;
   left: 74%;
-//   margin-top: -259px;
-//   margin-left: -89px;
   text-align: center;
   z-index: 1;
 }

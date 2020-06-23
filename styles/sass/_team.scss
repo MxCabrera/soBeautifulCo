@@ -1,7 +1,7 @@
 // team section 
 .mainTeam {
    position: relative;
-   height: 193rem;
+   height: 200rem;
    .teamAbsolute {
       width: 90%;
       // margin: 0 auto;
@@ -31,6 +31,7 @@
       img {
          border-radius: 10px;
          width: 100%;
+         border: 5px solid grey;
       }
    }
    &:hover {
@@ -56,6 +57,7 @@
    p {
       // text-shadow: 0.5px 0.5px 1px #000;
       line-height: 1.5rem;
+      margin: 1rem auto;
    }
    .teamPosition {
       font-weight: 700;
@@ -77,8 +79,12 @@
                font-size: 2rem;
                span {
                   text-shadow: none;
-                  color: rgb(99, 98, 98);
-                  font-size: 1.5rem;
+                  // font-family: 'Poppins', sans-serif;
+                  // font-family: 'Raleway', sans-serif;
+                  font-family: 'Roboto Mono', monospace;
+                  color: rgb(3, 3, 3);
+                  font-size: 1rem;
+                  text-transform: uppercase;
                   font-weight: 600;
                }
             }
@@ -93,5 +99,210 @@
             }
          }
       }
+   }
+}
+
+@media (max-width: 1280px) {
+   .mainTeam {
+      height: 210rem;
+   }
+}
+
+@media (max-width: 1124px) {
+   .mainTeam {
+      height: 220rem;
+   }
+}
+
+@media (max-width: 1068px) {
+   .headerTeam {
+      height: 37rem;
+      .wrapper {
+         h2 {
+            width: 100%;
+         }
+      }
+   }
+   .mainTeam {
+      height: 230rem;
+   }
+   .teamInfo {
+      .flexSocial {
+         display: flex;
+         flex-direction: column;
+      }
+   }
+}
+
+@media (max-width: 1028px) {
+   .mainTeam {
+      height: 240rem;
+   }
+}
+
+@media (max-width: 958px) {
+   .mainTeam {
+      height: 250rem;
+   }
+}
+
+@media (max-width: 892px) {
+   .mainTeam {
+      height: 270rem;
+   }
+}
+
+@media (max-width: 820px) { 
+   .mainTeam {
+      height: 287rem;
+   }
+}
+
+
+@media (max-width: 768px) {
+   .headerTeam {
+      height: 34rem;
+      .wrapper {
+         h2 {
+            font-size: 3.5rem;
+            margin-top: 3rem;
+         }
+      }
+   }
+   .mainTeam {
+      height: 190rem;
+      .teamAbsolute {
+         padding: 1rem 2rem;
+      }
+   }
+   .teamInfo {
+      h3 {
+         font-size: 1.5rem;
+      }
+      .teamPosition {
+         font-size: 1rem;
+      }
+      p {
+         font-size: 0.8rem;
+         line-height: 1rem;
+      }
+   }
+   .flexSocial {
+      line-height: 0.9rem;
+   }
+   .teamInfo .flexSocial p a i span {
+      font-size: 0.7rem;
+      margin-bottom: 1rem;
+   }
+}
+
+@media (max-width: 712px) {
+   .mainTeam {
+      height: 200rem;
+   }
+}
+
+@media (max-width: 660px) {
+   .mainTeam {
+      height: 210rem;
+   }
+}
+
+@media (max-width: 628px) {
+   .mainTeam {
+      height: 220rem;
+   }
+}
+
+@media (max-width: 600px) {
+   .headerTeam {
+      height: 29rem;
+      .wrapper {
+         h2 {
+            font-size: 3rem;
+            margin-top: 2rem;
+         }
+      }
+   }
+   .mainTeam {
+      height: 280rem;
+   }
+   .teamflex {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 1rem auto;
+      .headshot {
+         text-align: center;
+         width: 50%;
+      }
+      .teamInfo {
+         width: 80%;
+         text-align: center;
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   .mainTeam {
+      height: 290rem;
+   }
+}
+
+@media (max-width: 460px) {
+   .mainTeam {
+      height: 300rem;
+   }
+}
+
+@media (max-width: 450px) {
+   .headerTeam {
+      background-position: 90% -5%;
+      height: 25rem;
+      .wrapper {
+         h2 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+         }
+      }
+   }
+   .mainTeam {
+      height: 320rem;
+      .teamAbsolute {
+         width: 95%;
+         left: 2.5%;
+         padding: 1rem;
+      }
+   }
+   .teamflex {
+      .headshot {
+         width: 70%;
+      }
+   }
+}
+
+@media (max-width: 380px) {
+   .mainTeam {
+      height: 330rem;
+   }
+}
+
+
+@media (max-width: 350px) {
+      .headerTeam {
+         background-position: 90% -60%;
+         height: 25rem;
+      .wrapper {
+         h2 {
+            font-size: 2rem;
+            margin-top: 1.5rem;
+         }
+      }
+   }
+}
+
+@media (max-width: 330px) {
+   .mainTeam {
+      height: 341rem;
    }
 }
