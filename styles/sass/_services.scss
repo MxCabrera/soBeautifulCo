@@ -2,6 +2,10 @@
    background-color: #FDF6F0;
 }
 
+.allServices {
+   margin-top: 2rem;
+}
+
 .serviceContainer {
    background-color: white;
    width: 90%;
@@ -64,7 +68,18 @@
    }
 }
 
+.serviceBack {
+   text-decoration: none;
+   color: #000;
+   &:hover {
+      text-decoration: underline;
+      color: pink;
+      transition: all 0.3s;
+   }
+}
+
 .serviceNav {
+   margin-bottom: 2rem;
    h2 {
       text-align: center;
       font-size: 2.5rem;
@@ -84,6 +99,7 @@
    width: 70%;
    flex-wrap: wrap;
    margin: 0 auto;
+   height: 7rem;
    li {
       list-style: none;
       margin-top: 1rem;
@@ -116,4 +132,53 @@
       box-shadow: 5px 5px 10px #000;
       transition: all 0.5s;
    }
+}
+
+@media (max-width: 1167px) {
+   .allServices {
+      margin-top: 5rem;
+   }
+   .serviceNavFlex {
+      width: 90%;
+   }
+}
+
+@media (max-width: 1050px) {
+   .headerService {
+      .wrapper h2 {
+         width: 100%;
+         font-size: 3.5rem;
+         margin-top: 3rem;
+      }
+   }
+}
+
+@media (max-width: 550px) {
+   .serviceNavFlex li {
+      width: 30;
+      text-align: center;
+      margin: 0 auto;
+   }
+   .serviceNav h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+   }
+   .headerService {
+      .wrapper h2 {
+         font-size: 3rem;
+         margin-top: 2.5rem;
+      }
+   }
+}
+
+@media (max-width: 525px) {
+   .serviceNavFlex {
+      height: 10rem;
+   }
+   .allServices {
+      margin-top: 7rem;
+   }
+}
+
+@media (max-width: 485px) {
 }

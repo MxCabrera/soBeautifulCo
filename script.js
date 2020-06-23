@@ -164,6 +164,9 @@ app.getServices = () => {
                }).join('')}
             </div>
                <a href="./contact.html"><button>Book Now</button></a>
+               <div>
+                  <a class="serviceBack" href="#serviceNav">Back to top <i class="far fa-caret-square-up"></i></a>
+               </div>
          </div>
       `)
    })
