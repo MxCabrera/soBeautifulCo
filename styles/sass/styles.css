@@ -408,7 +408,7 @@ header h2 {
     position: absolute;
     cursor: pointer;
     right: 5%;
-    top: 4%;
+    top: 45%;
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
     z-index: 200;
@@ -471,9 +471,6 @@ header h2 {
     top: 80%;
     left: 20%;
   }
-  .hamburger {
-    top: 6%;
-  }
 }
 
 .indexTitle {
@@ -490,7 +487,7 @@ header h2 {
 
 .wrap {
   position: absolute;
-  top: 11%;
+  top: 5%;
   left: 74%;
   text-align: center;
   z-index: 1;
@@ -805,12 +802,12 @@ header h2 {
     background-position: 20%;
   }
   .headerLanding .indexTitle {
-    margin-top: 1rem;
+    padding-top: 1rem;
     font-size: 2rem;
   }
   .wrap {
     left: 48%;
-    top: 67%;
+    top: 40%;
   }
   .bookButton {
     font-size: 20px;
