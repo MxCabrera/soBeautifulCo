@@ -13,14 +13,14 @@ app.services = [
             image: "classic.png",
             info: "Classic Eyelash Extensions are a one-to-one application. This is a method where one eyelash extension is glued onto one of your natural lashes. If you’re looking for a more natural look Classic Eyelash Extensions are the perfect set for you!"
          }, {
-            name: "Hybrid Lashes",
+            name: "Hybrid Lash Extension",
             price: 100.00,
             duration: "2hrs",
             class: "eyelash2",
             image: "hybrid.png",
             info: "The Hybrid Eyelash Extensions is a technique that requires a combination of two different lash application. The Hybrid lashes consist of a mix of Classic lash application & Volume Application. This is the perfect set for you if you’re looking for a subtle fuller look that compliments your natural eyelashes."
          }, {
-            name: "Volume",
+            name: "Volume Extensions",
             price: 120.00,
             duration: "2hr 30mins",
             class: "eyelash3",
