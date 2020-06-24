@@ -2,36 +2,6 @@
    width: 90%;
    margin: 0 auto;
 }
-nav {
-   height: 10vh;
-   min-height: 4rem;
-   background-color: rgba(255, 255, 255, 1);
-   display: flex;
-   .navWrap {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 91%;
-      margin: 0 auto;
-      .logo{
-         width: 50px;
-         height: 50px;
-         margin-top: 1rem;
-         margin-left: 0.7rem;
-         img {
-            border-radius: 50px;
-            width: 100%;
-         }
-      }
-      .nav-links {
-         li a {
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 1.1px;
-         }
-      }
-   }
-}
 
 .headerLanding {
    // background-image: url(../../assets/header.JPG);
@@ -71,7 +41,7 @@ header {
    h2 {
       text-transform: uppercase;
       color: white;
-      margin-top: 4rem;
+      padding-top: 4rem;
       text-shadow: 2px 2px 10px #000;
       font-size: 4rem;
       width: 50%;
@@ -182,7 +152,7 @@ header {
 
 }
 .indexTitle {
-   margin-top: 33rem;
+   padding-top: 33rem;
 }
 
 .bookButton {

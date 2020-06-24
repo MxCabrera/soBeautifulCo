@@ -267,9 +267,15 @@ body {
   margin-bottom: 2rem;
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
+.mainWrapper {
+  position: relative;
+}
+
+.mainWrapper nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
 nav {
@@ -314,6 +320,11 @@ nav .navWrap .nav-links li a {
   letter-spacing: 1.1px;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .headerLanding {
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/header.jpeg);
 }
@@ -349,7 +360,7 @@ header {
 header h2 {
   text-transform: uppercase;
   color: white;
-  margin-top: 4rem;
+  padding-top: 4rem;
   text-shadow: 2px 2px 10px #000;
   font-size: 4rem;
   width: 50%;
@@ -466,7 +477,7 @@ header h2 {
 }
 
 .indexTitle {
-  margin-top: 33rem;
+  padding-top: 33rem;
 }
 
 .bookButton {
@@ -1039,7 +1050,7 @@ header h2 {
   }
   .headerTeam .wrapper h2 {
     font-size: 3.5rem;
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
   .mainTeam {
     height: 190rem;
@@ -1090,7 +1101,7 @@ header h2 {
   }
   .headerTeam .wrapper h2 {
     font-size: 3rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .mainTeam {
     height: 280rem;
@@ -1143,7 +1154,7 @@ header h2 {
   }
   .headerTeam .wrapper h2 {
     font-size: 2.5rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .mainTeam {
     height: 320rem;
@@ -1171,7 +1182,7 @@ header h2 {
   }
   .headerTeam .wrapper h2 {
     font-size: 2rem;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -1287,12 +1298,13 @@ header h2 {
   text-align: center;
   font-size: 2.5rem;
   text-transform: uppercase;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .serviceNav nav {
   background-color: #FDF6F0;
   margin-top: 1rem;
+  z-index: 1;
 }
 
 .serviceNavFlex {
@@ -1374,7 +1386,7 @@ header h2 {
   .headerService .wrapper h2 {
     width: 100%;
     font-size: 3.5rem;
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
   .serviceContainer .productType .serviceImage img {
     height: 16rem;
@@ -1443,7 +1455,7 @@ header h2 {
   }
   .headerService .wrapper h2 {
     font-size: 3rem;
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
   }
 }
 
@@ -1637,7 +1649,7 @@ header h2 {
   }
   .headerProducts .wrapper h2 {
     font-size: 3.3rem;
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
   .productSection .productContainer .productImage img {
     height: 9rem;
@@ -1670,7 +1682,7 @@ header h2 {
 @media (max-width: 500px) {
   .headerProducts .wrapper h2 {
     font-size: 2.8rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .productSection .productContainer .productImage img {
     height: 21rem;
@@ -1689,7 +1701,7 @@ header h2 {
   }
   .headerProducts .wrapper h2 {
     font-size: 2.3rem;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
   }
   .productMain h2 {
     font-size: 1.5rem;
@@ -1932,7 +1944,7 @@ header h2 {
   }
   .headerContact .wrapper h2 {
     font-size: 3.5rem;
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
   .contactInstructions .warning {
     font-size: 2rem;
@@ -1971,7 +1983,7 @@ header h2 {
   .headerContact .wrapper h2 {
     width: 70%;
     font-size: 3rem;
-    margin-top: 2.3rem;
+    padding-top: 2.3rem;
   }
   .contactInstructions .warning {
     font-size: 1.7rem;
@@ -2025,7 +2037,7 @@ header h2 {
   }
   .headerContact .wrapper h2 {
     font-size: 2.5rem;
-    margin-top: 1.8rem;
+    padding-top: 1.8rem;
   }
   .contactInstructions .warning {
     font-size: 1.5rem;

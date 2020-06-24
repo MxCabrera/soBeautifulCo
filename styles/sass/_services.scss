@@ -84,11 +84,12 @@
       text-align: center;
       font-size: 2.5rem;
       text-transform: uppercase;
-      margin-top: 3rem;
+      padding-top: 3rem;
    }
    nav {
       background-color: #FDF6F0;
       margin-top: 1rem;
+      z-index: 1;
    }
 }
 
@@ -161,7 +162,7 @@
       .wrapper h2 {
          width: 100%;
          font-size: 3.5rem;
-         margin-top: 3rem;
+         padding-top: 3rem;
       }
    }
    .serviceContainer {
@@ -253,7 +254,7 @@
    .headerService {
       .wrapper h2 {
          font-size: 3rem;
-         margin-top: 2.5rem;
+         padding-top: 2.5rem;
       }
    }
 }
