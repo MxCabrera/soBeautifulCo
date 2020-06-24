@@ -859,6 +859,10 @@ header h2 {
   padding: 3rem;
 }
 
+.displayNoneMobile {
+  display: none;
+}
+
 .teamflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,6 +1115,12 @@ header h2 {
   .teamflex .teamInfo {
     width: 80%;
     text-align: center;
+  }
+  .displayNoneMobile {
+    display: block;
+  }
+  .displayNoneDesktop {
+    display: none;
   }
 }
 

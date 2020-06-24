@@ -15,6 +15,10 @@
    }
 }
 
+.displayNoneMobile {
+   display: none;
+}
+
 .teamflex {
    display: flex;
    flex-direction: row;
@@ -240,6 +244,12 @@
          width: 80%;
          text-align: center;
       }
+   }
+   .displayNoneMobile {
+      display: block;
+   }
+   .displayNoneDesktop {
+      display: none;
    }
 }
 
