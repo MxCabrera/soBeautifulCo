@@ -1156,7 +1156,7 @@ header h2 {
 
 @media (max-width: 450px) {
   .headerTeam {
-    background-position: 90% -5%;
+    background-position: 90% 0%;
     height: 25rem;
   }
   .headerTeam .wrapper h2 {
@@ -1183,10 +1183,6 @@ header h2 {
 }
 
 @media (max-width: 350px) {
-  .headerTeam {
-    background-position: 90% 0%;
-    height: 25rem;
-  }
   .headerTeam .wrapper h2 {
     font-size: 2rem;
     padding-top: 1.5rem;
