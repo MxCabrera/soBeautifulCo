@@ -140,16 +140,13 @@ app.services = [
 
 
 app.getServices = () => {
-   console.log(app.services[0].type[0].name)
    app.services.map((stuff) => {
-      console.log(stuff)
       $('.allServices').append(`
          <div class="serviceContainer ${stuff.id}"> 
             <h3 id="${stuff.id}">${stuff.service}</h3>
             <p class="serviceInfo">${stuff.info}</p>
             <div class="productType">
                ${stuff.type.map((moreStuff)=>{
-                  // console.log(moreStuff)
                   return(`
                      <div class="individualProduct ${moreStuff.class}">
                         <p class="serviceName">${moreStuff.name}</p>
