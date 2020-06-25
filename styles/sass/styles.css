@@ -327,29 +327,34 @@ nav .navWrap .nav-links li a {
 
 .headerLanding {
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/header.jpeg);
+  background-repeat: no-repeat;
 }
 
 .headerContact {
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic1.jpg);
   height: 45rem;
+  background-repeat: no-repeat;
 }
 
 .headerProducts {
-  background-position: 50% -15%;
+  background-position: 50% 0%;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic5.jpg);
   height: 88vh;
+  background-repeat: no-repeat;
 }
 
 .headerTeam {
   background-position: 50% 25%;
   height: 40rem;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic4.jpeg);
+  background-repeat: no-repeat;
 }
 
 .headerService {
   background-position: 50% 30%;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/services.jpeg);
   height: 88vh;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -392,6 +397,10 @@ header h2 {
 
 .nav-links li a:hover {
   color: pink;
+}
+
+.indexTitle {
+  padding-top: 37rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -473,10 +482,6 @@ header h2 {
   }
 }
 
-.indexTitle {
-  padding-top: 33rem;
-}
-
 .bookButton {
   padding: 25px 35px;
   text-decoration: none;
@@ -551,7 +556,6 @@ header h2 {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 3rem;
-  text-shadow: 2px 2px 5px #575555;
   border-bottom: 2px solid #7c7c7c;
   margin: 2rem auto;
 }
@@ -560,7 +564,7 @@ header h2 {
   font-size: 1.5rem;
 }
 
-.carousel .test1 p {
+.carousel .test1 em {
   line-height: 2rem;
   letter-spacing: 1.2px;
   margin-top: -.5rem;
@@ -570,7 +574,7 @@ header h2 {
   font-size: 2rem;
 }
 
-.carousel .test2 p {
+.carousel .test2 em {
   margin-top: 2rem;
   letter-spacing: 1.2px;
   line-height: 2.5rem;
@@ -580,7 +584,7 @@ header h2 {
   font-size: 1.5rem;
 }
 
-.carousel .test3 p {
+.carousel .test3 em {
   margin-top: -.5rem;
   letter-spacing: 1.2px;
   line-height: 2rem;
@@ -590,30 +594,28 @@ header h2 {
   margin: 1rem 0rem 3rem 0rem;
   height: 20rem;
   padding: 5rem 3rem;
-  background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119, 119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
-  color: pink;
-  text-shadow: 2px 2px 2px #000;
+  background: linear-gradient(135deg, rgba(255, 192, 203, 0.9), rgba(248, 208, 214, 0.9), rgba(245, 218, 222, 0.9), rgba(248, 208, 214, 0.9), rgba(255, 192, 203, 0.9));
+  color: #838282;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
-.carousel .testimonial p {
+.carousel .testimonial em {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   font-weight: 300;
 }
 
 .carousel .testimonial:hover {
-  background: linear-gradient(135deg, rgba(119, 119, 119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9), rgba(160, 158, 158, 0.9), rgba(172, 171, 171, 0.9));
+  background: linear-gradient(135deg, rgba(252, 207, 214, 0.9), rgba(248, 220, 224, 0.9), rgba(235, 195, 201, 0.9), rgba(248, 220, 224, 0.9), rgba(252, 207, 214, 0.9));
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
-.carousel .testimonial:hover p {
+.carousel .testimonial:hover em {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  color: #fff;
-  text-shadow: 2px 3px 3px #000;
+  color: black;
 }
 
 .slick-prev:before {
@@ -685,7 +687,7 @@ header h2 {
   .carousel h2 {
     font-size: 2.5rem;
   }
-  .carousel .test1 p {
+  .carousel .test1 em {
     font-size: 1.5rem;
   }
   .carousel .test2 {
@@ -716,8 +718,8 @@ header h2 {
   .carousel h2 {
     font-size: 2rem;
   }
-  .carousel .test1 p,
-  .carousel .test3 p {
+  .carousel .test1 em,
+  .carousel .test3 em {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
@@ -746,12 +748,12 @@ header h2 {
   .carousel h2 {
     font-size: 1.7rem;
   }
-  .carousel .test1 p,
-  .carousel .test3 p {
+  .carousel .test1 em,
+  .carousel .test3 em {
     font-size: 1.2rem;
     line-height: 1.4rem;
   }
-  .carousel .test2 p {
+  .carousel .test2 em {
     font-size: 1.5rem;
     line-height: 1.7rem;
   }
@@ -776,7 +778,7 @@ header h2 {
   .headerLanding .indexTitle {
     font-size: 2.5rem;
   }
-  .carousel .test1 p,
+  .carousel .test1 em,
   .carousel .test3 {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -819,12 +821,12 @@ header h2 {
   .carousel .test2 {
     margin-top: 7rem;
   }
-  .carousel .test2 p {
+  .carousel .test2 em {
     font-size: 1.2rem;
     line-height: 1.4rem;
   }
-  .carousel .test1 p,
-  .carousel .test3 p {
+  .carousel .test1 em,
+  .carousel .test3 em {
     font-size: 1rem;
     line-height: 1.2rem;
   }
@@ -882,8 +884,8 @@ header h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
+  -webkit-box-shadow: 2px 2px 10px #757474;
+          box-shadow: 2px 2px 10px #757474;
   border-radius: 10px;
   padding: 2rem 0;
   margin: 1rem 0;
@@ -902,8 +904,6 @@ header h2 {
 }
 
 .teamflex:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -1204,15 +1204,12 @@ header h2 {
   border-radius: 10px;
   padding: 2rem;
   position: relative;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
 }
 
 .serviceContainer h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  text-shadow: 2px 3px 5px #b98089;
 }
 
 .serviceContainer .serviceInfo {
@@ -1251,7 +1248,7 @@ header h2 {
 .serviceContainer .productType .serviceImage img {
   width: 100%;
   height: 20rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .serviceContainer .productType .serviceInfo {
@@ -1264,15 +1261,14 @@ header h2 {
   text-transform: uppercase;
   position: absolute;
   bottom: 1rem;
+  background-color: pink;
   right: 45%;
-  -webkit-box-shadow: 0px 2px 5px #000;
-          box-shadow: 0px 2px 5px #000;
-  border-radius: 25px;
+  border-radius: 5px;
   border: none;
 }
 
 .serviceContainer button:hover {
-  background-color: pink;
+  color: white;
 }
 
 .serviceBack {
@@ -1315,7 +1311,7 @@ header h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 70%;
+  width: 85%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
@@ -1329,14 +1325,12 @@ header h2 {
 
 .serviceNavFlex li a {
   padding: 0.5rem;
-  border: 1px solid #000;
+  border: 1px solid gray;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-box-shadow: 3px 3px 5px #000;
-          box-shadow: 3px 3px 5px #000;
   color: black;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 11rem;
   display: inline-block;
   text-align: center;
@@ -1354,8 +1348,8 @@ header h2 {
   min-width: 30%;
   width: 33%;
   background-color: #FDF6F0;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
+  -webkit-box-shadow: 2px 2px 10px #797878;
+          box-shadow: 2px 2px 10px #797878;
   margin: 0.5rem;
 }
 
@@ -1416,6 +1410,10 @@ header h2 {
   .serviceContainer .productType .individualProduct {
     width: 80%;
     margin: 0.5rem auto;
+  }
+  .serviceContainer .productType .individualProduct:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .serviceContainer .productType .serviceInfo {
     text-align: justify;
@@ -1556,10 +1554,10 @@ header h2 {
   width: 33%;
   background-color: white;
   padding: 3rem;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #c2c0c0;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
+  -webkit-box-shadow: 2px 2px 10px #6e6e6e;
+          box-shadow: 2px 2px 10px #6e6e6e;
 }
 
 .productSection .productContainer .productImage {
@@ -1582,21 +1580,20 @@ header h2 {
 
 .productSection .productContainer a button {
   padding: .5rem;
-  border-radius: 20px;
+  border-radius: 5px;
   width: 46%;
   text-transform: uppercase;
   font-size: 0.7rem;
   margin: 0.2rem;
   border: none;
   background-color: #c5c2c2;
-  -webkit-box-shadow: 2px 2px 4px #000;
-          box-shadow: 2px 2px 4px #000;
 }
 
 .productSection .productContainer a button:hover {
   background-color: pink;
   -webkit-box-shadow: none;
           box-shadow: none;
+  color: white;
 }
 
 .productSection .productContainer a .buyProduct {
@@ -1605,7 +1602,6 @@ header h2 {
 }
 
 .productSection .productContainer a .buyProduct:hover {
-  background-color: #000;
   color: white;
 }
 
@@ -1650,6 +1646,10 @@ header h2 {
   }
   .productSection .productContainer .productImage img {
     height: 9rem;
+  }
+  .productSection .productContainer:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -1734,10 +1734,9 @@ header h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #000;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
+  -webkit-box-shadow: 2px 2px 10px #727171;
+          box-shadow: 2px 2px 10px #727171;
   padding: 2rem;
   margin: 3rem;
   background-color: white;
@@ -1758,7 +1757,7 @@ header h2 {
   padding: 0.5rem;
   border-radius: 5px;
   background-color: #FDF6F0;
-  border: 1px solid #000;
+  border: 1px solid #747373;
   width: 100%;
 }
 
@@ -1770,10 +1769,9 @@ header h2 {
   width: 50%;
   padding: 2rem;
   margin: 3rem;
-  border: 1px solid #000;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
+  -webkit-box-shadow: 2px 2px 10px #818080;
+          box-shadow: 2px 2px 10px #818080;
   background-color: #fff;
 }
 
@@ -1823,7 +1821,6 @@ header h2 {
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .contactInstructions h2 {
@@ -1858,18 +1855,13 @@ header h2 {
   text-align: center;
   margin: 2rem 11.5rem;
   padding: 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: pink;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
   text-transform: uppercase;
 }
 
 .bookAppoint:hover {
-  background-color: #FDF6F0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 1px solid #a19f9f;
+  color: white;
 }
 
 .appPic {
@@ -1888,7 +1880,6 @@ header h2 {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   color: #757374;
-  text-shadow: 2px 2px 2px pink;
   width: 25%;
 }
 

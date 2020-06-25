@@ -14,13 +14,12 @@
       text-transform: uppercase;
       letter-spacing: 1.2px;
       font-size: 3rem;
-      text-shadow: 2px 2px 5px rgb(87, 85, 85);
       border-bottom: 2px solid rgb(124, 124, 124);
       margin: 2rem auto;
    }
    .test1 {
       font-size: 1.5rem;
-      p {
+      em {
          line-height: 2rem;
          letter-spacing: 1.2px;
          margin-top: -.5rem;
@@ -28,7 +27,7 @@
    }
    .test2 {
       font-size: 2rem;
-      p {
+      em {
          margin-top: 2rem;
          letter-spacing: 1.2px;
          line-height: 2.5rem;
@@ -36,31 +35,33 @@
    }
    .test3 {
       font-size: 1.5rem;
-      p {
+      em {
          margin-top: -.5rem;
          letter-spacing: 1.2px;
          line-height: 2rem;
       }
    }
+
    .testimonial {
       margin: 1rem 0rem 3rem 0rem;
       height: 20rem;
       padding: 5rem 3rem;
-      background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119,119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
-      color: pink;
-      text-shadow: 2px 2px 2px #000;
+      background: linear-gradient(135deg, rgba(255, 192, 203,0.9), rgba(248, 208, 214, 0.9), rgba(245, 218, 222, 0.9), rgba(248, 208, 214, 0.9), rgba(255, 192, 203,0.9));
+      // background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119,119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
+      color: rgb(131, 130, 130);
+      // text-shadow: 2px 2px 2px #000;
       transition: all 0.8s;
-      p {
+      em {
          transition: all 0.8s;
          font-weight: 300;
       }
       &:hover {
-         background: linear-gradient(135deg, rgba(119, 119,119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9) , rgba(160, 158, 158, 0.9),  rgba(172, 171, 171, 0.9));
+         // background: linear-gradient(135deg, rgba(119, 119,119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9) , rgba(160, 158, 158, 0.9),  rgba(172, 171, 171, 0.9));
+         background: linear-gradient(135deg, rgba(252, 207, 214, 0.9), rgba(248, 220, 224, 0.9), rgba(235, 195, 201, 0.9), rgba(248, 220, 224, 0.9), rgba(252, 207, 214, 0.9));
          transition: all 0.8s;
-         p {
+         em {
             transition: all 0.8s;
-            color: #fff;
-            text-shadow: 2px 3px 3px #000;
+            color: rgb(0, 0, 0);
          }
       }
    }
@@ -134,7 +135,7 @@
       font-size: 2.5rem;
    }
 
-   .carousel .test1 p{
+   .carousel .test1 em{
       font-size: 1.5rem;
    }
    .carousel .test2 {
@@ -170,8 +171,8 @@
       h2 {
          font-size: 2rem;
       }
-      .test1 p,
-      .test3 p {
+      .test1 em,
+      .test3 em {
          font-size: 1.2rem;
          line-height: 1.5rem;
       }
@@ -204,12 +205,12 @@
       h2 {
          font-size: 1.7rem;
       }
-      .test1 p,
-      .test3 p {
+      .test1 em,
+      .test3 em {
          font-size: 1.2rem; 
          line-height: 1.4rem;
       }
-      .test2 p {
+      .test2 em {
          font-size: 1.5rem;
          line-height: 1.7rem;
       }
@@ -240,7 +241,7 @@
       }
    }
    .carousel {
-      .test1 p,
+      .test1 em,
       .test3 {
          font-size: 1rem;
          line-height: 1.2rem;
@@ -286,13 +287,13 @@
    .carousel {
       .test2 {
          margin-top: 7rem;
-         p {
+         em {
             font-size: 1.2rem;
             line-height: 1.4rem;
          }
       }
-      .test1 p,
-      .test3 p {
+      .test1 em,
+      .test3 em {
          font-size: 1rem;
          line-height: 1.2rem;
       }

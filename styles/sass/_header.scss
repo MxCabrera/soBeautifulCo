@@ -6,19 +6,22 @@
 .headerLanding {
    // background-image: url(../../assets/header.JPG);
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/header.jpeg);
+   background-repeat: no-repeat;
 }
 
 .headerContact {
    // background-image: url(../../assets/pic1.jpg);
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic1.jpg);
    height: 45rem;
+   background-repeat: no-repeat;
 }
 
 .headerProducts {
    // background-image: url(../../assets/pic5.jpg);
-   background-position: 50% -15%;
+   background-position: 50% 0%;
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic5.jpg);
    height: 88vh;
+   background-repeat: no-repeat;
 }
 
 .headerTeam {
@@ -26,6 +29,7 @@
    background-position: 50% 25%;
    height: 40rem;
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic4.jpeg);
+   background-repeat: no-repeat;
 }
 
 .headerService {
@@ -33,6 +37,7 @@
    background-position: 50% 30%;
    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255,255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/services.jpeg);
    height: 88vh;
+   background-repeat: no-repeat;
 }
 
 header {
@@ -71,6 +76,10 @@ header {
          color: rgb(255, 192, 203);
       }
    }
+}
+
+.indexTitle {
+   padding-top: 37rem;
 }
 
 
@@ -145,10 +154,6 @@ header {
       top: 80%;
       left: 20%;
    }
-
-}
-.indexTitle {
-   padding-top: 33rem;
 }
 
 .bookButton {
