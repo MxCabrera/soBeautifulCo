@@ -774,9 +774,6 @@ header h2 {
   .footerInfo {
     font-size: 8px;
   }
-  .slick-arrow {
-    display: none;
-  }
 }
 
 @media (max-width: 500px) {
