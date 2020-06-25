@@ -2070,7 +2070,7 @@ footer div h2 a {
 }
 
 article {
-  background-color: #777575;
+  background-color: #AEADB2;
 }
 
 article section {
@@ -2099,45 +2099,159 @@ article section .flexing .footerLogo {
 article section .flexing .footerLogo img {
   width: 100%;
   border-radius: 50%;
+  border: 1px solid #000;
+}
+
+article section .flexing h4 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.contactUs {
+  width: 80%;
 }
 
 .footerContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  text-align: left;
-  margin: 1rem;
+  margin: .5rem 0;
+  font-size: .9rem;
+  width: 70%;
   text-transform: uppercase;
-}
-
-.footerContact h4 {
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-weight: 600;
-  text-align: center;
-  font-size: 1.3rem;
 }
 
 .footerContact p {
-  text-align: left;
+  width: 50%;
   color: white;
+  text-align: left;
   margin: 0.5rem auto;
+  letter-spacing: 1.3px;
+}
+
+.footerContact p i {
+  color: pink;
+  font-size: 1rem;
+  text-shadow: 0.5px 0.5px 1.5px #555454;
 }
 
 .footerContact p a {
-  text-align: left;
   color: white;
   text-decoration: none;
+}
+
+.footerContact p a:hover {
+  color: pink;
+}
+
+@media (max-width: 1300px) {
+  .footerContact {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .footerContact {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  article section .flexing .footerLogo {
+    width: 15%;
+  }
+  .footerContact {
+    width: 100%;
+  }
+}
+
+@media (max-width: 882px) {
+  article section .flexing .footerLogo {
+    width: 15%;
+  }
+  article section .flexing h4 {
+    font-size: 1rem;
+  }
+  .contactUs {
+    width: 90%;
+  }
+  .footerContact {
+    margin-bottom: 2rem;
+  }
+  .footerContact p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .footerContact p {
+    width: 100%;
+  }
+  article section .flexing .footerLogo {
+    width: 30%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  article section .flexing .footerLogo {
+    width: 40%;
+  }
+  .footerContact p {
+    font-size: .65rem;
+  }
+}
+
+@media (max-width: 500px) {
+  article section .flexing .footerLogo {
+    width: 40%;
+  }
+  .footerContact p {
+    font-size: .65rem;
+    margin: 0.3rem auto;
+    letter-spacing: 1.1px;
+  }
+}
+
+@media (max-width: 400px) {
+  article section .flexing .footerLogo {
+    width: 45%;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+  }
+  .footerContact p {
+    font-size: .55rem;
+    margin: 0.3rem auto;
+    letter-spacing: 1.1px;
+  }
+  .contactUs {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  article section .flexing .footerLogo {
+    width: 45%;
+    margin-top: 3rem;
+  }
+  .footerContact p i {
+    font-size: .7rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

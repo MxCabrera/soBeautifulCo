@@ -16,6 +16,7 @@
 /* Arrows */
 .slick-prev,
 .slick-next {
+  display: none;
   position: absolute;
   display: block;
   height: 20px;

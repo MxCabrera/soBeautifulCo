@@ -256,7 +256,7 @@ $(function(){
    app.getServices()
    $('.thing').slick({
       dots: true,
-      arrows: true,
+      arrows: false,
       autoplay: true,
       autoplaySpeed: 4000,
       nextArrow: '<button type="button" class="slick-next">Next</button>',
