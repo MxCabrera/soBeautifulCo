@@ -594,8 +594,10 @@ header h2 {
   margin: 1rem 0rem 3rem 0rem;
   height: 20rem;
   padding: 5rem 3rem;
-  background: linear-gradient(135deg, rgba(255, 192, 203, 0.9), rgba(248, 208, 214, 0.9), rgba(245, 218, 222, 0.9), rgba(248, 208, 214, 0.9), rgba(255, 192, 203, 0.9));
+  background: linear-gradient(135deg, rgba(255, 192, 203, 0.9), rgba(248, 208, 214, 0.9), rgba(245, 218, 222, 0.9), rgba(248, 208, 214, 0.9), rgba(255, 192, 203, 0.9)), url(../../assets/pic3.jpg);
   color: #838282;
+  background-repeat: no-repeat;
+  background-position: 50%;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -607,9 +609,11 @@ header h2 {
 }
 
 .carousel .testimonial:hover {
-  background: linear-gradient(135deg, rgba(252, 207, 214, 0.9), rgba(248, 220, 224, 0.9), rgba(235, 195, 201, 0.9), rgba(248, 220, 224, 0.9), rgba(252, 207, 214, 0.9));
+  background: linear-gradient(135deg, rgba(252, 207, 214, 0.9), rgba(248, 220, 224, 0.9), rgba(235, 195, 201, 0.9), rgba(248, 220, 224, 0.9), rgba(252, 207, 214, 0.9)), url(../../assets/pic3.jpg);
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
 .carousel .testimonial:hover em {
@@ -1485,13 +1489,14 @@ header h2 {
     padding: 1.3rem;
   }
   .serviceContainer .productType .serviceImage img {
+    width: 100%;
     height: 25rem;
   }
 }
 
 @media (max-width: 450px) {
   .serviceContainer .productType .serviceImage img {
-    height: 20rem;
+    height: 19rem;
   }
 }
 
@@ -2060,5 +2065,76 @@ footer div h2 a {
   font-family: 'Manrope', sans-serif;
   text-decoration: none;
   color: grey;
+}
+
+article {
+  background-color: #777575;
+}
+
+article section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+article section .flexing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article section .flexing .footerLogo {
+  width: 10%;
+  margin: 1rem;
+}
+
+article section .flexing .footerLogo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.footerContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  margin: 1rem;
+}
+
+.footerContact h4 {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.footerContact p {
+  text-align: left;
+  color: white;
+  margin: 0.5rem auto;
+}
+
+.footerContact p a {
+  text-align: left;
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

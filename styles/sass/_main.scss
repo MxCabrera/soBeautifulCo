@@ -46,10 +46,13 @@
       margin: 1rem 0rem 3rem 0rem;
       height: 20rem;
       padding: 5rem 3rem;
-      background: linear-gradient(135deg, rgba(255, 192, 203,0.9), rgba(248, 208, 214, 0.9), rgba(245, 218, 222, 0.9), rgba(248, 208, 214, 0.9), rgba(255, 192, 203,0.9));
+      background: linear-gradient(135deg, rgba(255, 192, 203,0.9), rgba(248, 208, 214, 0.9), rgba(245, 218, 222, 0.9), rgba(248, 208, 214, 0.9), rgba(255, 192, 203,0.9)), url(../../assets/pic3.jpg);
       // background: linear-gradient(135deg, rgba(136, 135, 135, 0.9), rgba(119, 119,119, 0.9), rgba(172, 171, 171, 0.9), rgba(160, 158, 158, 0.9), rgba(124, 123, 123, 0.9));
       color: rgb(131, 130, 130);
       // text-shadow: 2px 2px 2px #000;
+      background-repeat: no-repeat;
+      // background-size: cover;
+      background-position: 50%;
       transition: all 0.8s;
       em {
          transition: all 0.8s;
@@ -57,8 +60,10 @@
       }
       &:hover {
          // background: linear-gradient(135deg, rgba(119, 119,119, 0.9), rgba(104, 104, 104, 0.9), rgba(122, 122, 122, 0.9) , rgba(160, 158, 158, 0.9),  rgba(172, 171, 171, 0.9));
-         background: linear-gradient(135deg, rgba(252, 207, 214, 0.9), rgba(248, 220, 224, 0.9), rgba(235, 195, 201, 0.9), rgba(248, 220, 224, 0.9), rgba(252, 207, 214, 0.9));
+         background: linear-gradient(135deg, rgba(252, 207, 214, 0.9), rgba(248, 220, 224, 0.9), rgba(235, 195, 201, 0.9), rgba(248, 220, 224, 0.9), rgba(252, 207, 214, 0.9)), url(../../assets/pic3.jpg);
          transition: all 0.8s;
+         background-position: 100%;
+         background-repeat: no-repeat;
          em {
             transition: all 0.8s;
             color: rgb(0, 0, 0);
@@ -91,7 +96,6 @@
       }
    }
 }
-
 
 @media (max-width: 1130px) {
    .wrap {

@@ -288,14 +288,15 @@
    .individualProduct {
       padding: 1.3rem;
    }
-      .serviceContainer .productType .serviceImage img {
+   .serviceContainer .productType .serviceImage img {
+      width: 100%;
       height: 25rem;
    }
 }
 
 @media (max-width: 450px) {
    .serviceContainer .productType .serviceImage img {
-      height: 20rem;
+      height: 19rem;
    }
 }
 
