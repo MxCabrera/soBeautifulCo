@@ -234,6 +234,11 @@
    .footerInfo {
       font-size: 8px;
    }
+   .slick-next,
+   .slick-prev,
+   .slick-arrow {
+      display: none;
+   }
 }
 
 @media (max-width: 500px) {
@@ -283,7 +288,7 @@
    }
    .wrap {
       left: 48%;
-      top: 35%;
+      top: 30%;
    }
    .bookButton {
       font-size: 20px;
