@@ -109,6 +109,9 @@
    .headerLanding {
       background-position: 50%;
    }
+   .carousel .test2 {
+      margin-top: 9rem;
+   }
 }
 
 @media (max-width: 900px) {
@@ -140,6 +143,7 @@
    }
    .carousel .test2 {
       font-size: 2rem;
+      margin-top: 9rem;
    }
    .social {
       a {
@@ -195,7 +199,7 @@
    .carousel {
       .test2 {
          padding: 3rem 1rem 5rem 1rem;
-         margin-top: 5rem;
+         margin-top: 12rem;
       }
       .test1,
       .test2,
@@ -242,11 +246,11 @@
    }
    .carousel {
       .test1 em,
-      .test3 {
+      .test3 em {
          font-size: 1rem;
          line-height: 1.2rem;
       }
-      .test2 {
+      .test2 em {
          font-size: 1.35rem;
       }
    }
@@ -286,7 +290,6 @@
    }
    .carousel {
       .test2 {
-         margin-top: 7rem;
          em {
             font-size: 1.2rem;
             line-height: 1.4rem;
