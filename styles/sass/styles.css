@@ -2115,6 +2115,7 @@ article section .flexing .footerLogo img {
           align-items: left;
   text-align: left;
   margin: 1rem;
+  text-transform: uppercase;
 }
 
 .footerContact h4 {
