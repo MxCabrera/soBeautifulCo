@@ -323,7 +323,7 @@
       li {
          font-size: 0.7rem;
          a {
-            width: 8.5rem;
+            width: 9rem;
          }
       }
    }
@@ -332,5 +332,12 @@
 @media (max-width: 320px) {
    .serviceContainer .productType .serviceImage img {
       height: 15rem;
+   }
+   .serviceNavFlex {
+      li {
+         a {
+            width: 8.5rem;
+         }
+      }
    }
 }
