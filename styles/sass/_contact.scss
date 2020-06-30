@@ -25,6 +25,14 @@
             background-color: #FDF6F0;
             border: 1px solid rgb(116, 115, 115);
             width: 100%;
+            &:focus {
+               color: rgb(160, 113, 121);
+               border: 1px solid rgb(138, 55, 69);
+            }
+            &:active {
+               color: rgb(160, 113, 121);
+               border: 1px solid rgb(138, 55, 69);
+            }
          }
          textarea {
             height: 10rem;
@@ -61,6 +69,14 @@
    &:hover {
       color: white;
    }
+   &:focus {
+      color: rgb(160, 113, 121);
+      border: 1px solid rgb(138, 55, 69);
+   }
+   &:active {
+      color: rgb(160, 113, 121);
+      border: 1px solid rgb(138, 55, 69);
+   }
 }
 .contactInstructions {
    width: 90%;
@@ -69,6 +85,12 @@
       margin: 0 auto;
       span {
          font-weight: 700;
+         &:focus {
+            border: 1px solid pink;
+         }
+         &:active {
+            border: 1px solid yellow;
+         }
       }
       p {
          color: pink;
@@ -102,6 +124,16 @@
    .contactNumber {
       text-align: center;
       margin-top: 2rem;
+      p {
+         &:focus {
+            color: rgb(160, 113, 121);
+            border: 1px solid rgb(138, 55, 69);
+         }
+         &:active {
+            color: rgb(160, 113, 121);
+            border: 1px solid rgb(138, 55, 69);
+         }
+      }
    }
 }
 
@@ -121,7 +153,14 @@
       color: white;
       
    }
-
+   &:focus {
+      color: rgb(160, 113, 121);
+      border: 1px solid rgb(138, 55, 69);
+   }
+   &:active {
+      color: rgb(160, 113, 121);
+      border: 1px solid rgb(138, 55, 69);
+   }
 }
 
 .appPic {

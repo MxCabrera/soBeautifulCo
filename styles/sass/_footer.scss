@@ -12,6 +12,17 @@ footer {
             font-family: 'Manrope', sans-serif;
             text-decoration: none;
             color: grey;
+            &:hover {
+               color: rgb(177, 177, 177);
+            }
+            &:focus {
+               color: rgb(160, 113, 121);
+               border: 1px solid rgb(138, 55, 69);
+            }
+            &:active {
+               color: rgb(160, 113, 121);
+               border: 1px solid rgb(138, 55, 69);
+            }
          }
       }
    }
@@ -78,6 +89,14 @@ article {
          text-decoration: none;
          &:hover {
             color: pink;
+         }
+         &:focus {
+            color: rgb(160, 113, 121);
+            border: 1px solid rgb(138, 55, 69);
+         }
+         &:active {
+            color: rgb(160, 113, 121);
+            border: 1px solid rgb(138, 55, 69);
          }
       }
    }

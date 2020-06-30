@@ -373,6 +373,16 @@ header h2 {
   font-family: 'Manrope', sans-serif;
 }
 
+.hamburger:focus {
+  color: pink;
+  border: 1px solid pink;
+}
+
+.hamburger:active {
+  color: yellow;
+  border: 1px solid yellow;
+}
+
 .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,6 +409,16 @@ header h2 {
   color: pink;
 }
 
+.nav-links li a:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.nav-links li a:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .indexTitle {
   padding-top: 37rem;
 }
@@ -421,6 +441,14 @@ header h2 {
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
     z-index: 200;
+  }
+  .hamburger:focus {
+    color: #a07179;
+    border: 1px solid #8a3745;
+  }
+  .hamburger:active {
+    color: #a07179;
+    border: 1px solid #8a3745;
   }
   .nav-links {
     background-color: #ffffff;
@@ -527,6 +555,16 @@ header h2 {
 .btn2:hover, .btn2:link:hover, .btn2:visited:hover {
   -webkit-box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.15) inset;
           box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.15) inset;
+}
+
+.btn2:focus, .btn2:link:focus, .btn2:visited:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.btn2:active, .btn2:link:active, .btn2:visited:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
 }
 
 .btn2:active, .btn2:link:active, .btn2:visited:active {
@@ -648,6 +686,16 @@ header h2 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: underline;
+}
+
+.social a:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.social a:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
 }
 
 @media (max-width: 1130px) {
@@ -866,7 +914,7 @@ header h2 {
 
 .mainTeam {
   position: relative;
-  height: 200rem;
+  height: 168rem;
 }
 
 .mainTeam .teamAbsolute {
@@ -934,6 +982,16 @@ header h2 {
   text-shadow: .5px .5px 1.5px #000;
 }
 
+.teamInfo h3:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.teamInfo h3:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .teamInfo p {
   line-height: 1.5rem;
   margin: 1rem auto;
@@ -990,19 +1048,30 @@ header h2 {
 }
 
 .teamInfo .flexSocial p a:hover span {
-  text-decoration: underline;
   color: #e4a3ae;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-@media (max-width: 1280px) {
+.teamInfo .flexSocial p a:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.teamInfo .flexSocial p a:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+@media (max-width: 1182px) {
   .mainTeam {
-    height: 210rem;
+    height: 175rem;
   }
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 1110px) {
   .mainTeam {
-    height: 220rem;
+    height: 185rem;
   }
 }
 
@@ -1014,7 +1083,7 @@ header h2 {
     width: 100%;
   }
   .mainTeam {
-    height: 230rem;
+    height: 190rem;
   }
   .teamInfo .flexSocial {
     display: -webkit-box;
@@ -1029,25 +1098,25 @@ header h2 {
 
 @media (max-width: 1028px) {
   .mainTeam {
-    height: 240rem;
+    height: 200rem;
   }
 }
 
 @media (max-width: 958px) {
   .mainTeam {
-    height: 250rem;
+    height: 210rem;
   }
 }
 
 @media (max-width: 892px) {
   .mainTeam {
-    height: 270rem;
+    height: 225rem;
   }
 }
 
 @media (max-width: 820px) {
   .mainTeam {
-    height: 287rem;
+    height: 240rem;
   }
 }
 
@@ -1060,7 +1129,7 @@ header h2 {
     padding-top: 3rem;
   }
   .mainTeam {
-    height: 190rem;
+    height: 160rem;
   }
   .mainTeam .teamAbsolute {
     padding: 1rem 2rem;
@@ -1086,19 +1155,19 @@ header h2 {
 
 @media (max-width: 712px) {
   .mainTeam {
-    height: 200rem;
+    height: 168rem;
   }
 }
 
 @media (max-width: 660px) {
   .mainTeam {
-    height: 210rem;
+    height: 171rem;
   }
 }
 
 @media (max-width: 628px) {
   .mainTeam {
-    height: 220rem;
+    height: 178rem;
   }
 }
 
@@ -1111,7 +1180,7 @@ header h2 {
     padding-top: 2rem;
   }
   .mainTeam {
-    height: 280rem;
+    height: 232rem;
   }
   .teamflex {
     -webkit-box-orient: vertical;
@@ -1144,13 +1213,13 @@ header h2 {
 
 @media (max-width: 500px) {
   .mainTeam {
-    height: 290rem;
+    height: 240rem;
   }
 }
 
 @media (max-width: 460px) {
   .mainTeam {
-    height: 300rem;
+    height: 250rem;
   }
 }
 
@@ -1164,7 +1233,7 @@ header h2 {
     padding-top: 2rem;
   }
   .mainTeam {
-    height: 320rem;
+    height: 265rem;
   }
   .mainTeam .teamAbsolute {
     width: 95%;
@@ -1178,7 +1247,7 @@ header h2 {
 
 @media (max-width: 380px) {
   .mainTeam {
-    height: 330rem;
+    height: 273rem;
   }
 }
 
@@ -1191,7 +1260,7 @@ header h2 {
 
 @media (max-width: 330px) {
   .mainTeam {
-    height: 341rem;
+    height: 275rem;
   }
 }
 
@@ -1277,6 +1346,16 @@ header h2 {
   color: white;
 }
 
+.serviceContainer button:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.serviceContainer button:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .serviceBack {
   text-decoration: none;
   color: #000;
@@ -1287,6 +1366,16 @@ header h2 {
   color: pink;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.serviceBack:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.serviceBack:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
 }
 
 .serviceNav {
@@ -1348,6 +1437,16 @@ header h2 {
           box-shadow: none;
 }
 
+.serviceNavFlex li a:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.serviceNavFlex li a:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .individualProduct {
   padding: 2rem;
   border-radius: 5px;
@@ -1365,6 +1464,16 @@ header h2 {
           transform: scale(1.05);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.individualProduct:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.individualProduct:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
 }
 
 @media (max-width: 1167px) {
@@ -1608,6 +1717,16 @@ header h2 {
   color: white;
 }
 
+.productSection .productContainer a button:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.productSection .productContainer a button:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .productSection .productContainer a .buyProduct {
   background-color: pink;
   color: #000;
@@ -1779,6 +1898,18 @@ header h2 {
   width: 100%;
 }
 
+.contactSection form label input:focus,
+.contactSection form label textarea:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.contactSection form label input:active,
+.contactSection form label textarea:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .contactSection form label textarea {
   height: 10rem;
 }
@@ -1815,6 +1946,16 @@ header h2 {
   color: white;
 }
 
+.submit:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.submit:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .contactInstructions {
   width: 90%;
   margin: 1rem auto;
@@ -1826,6 +1967,14 @@ header h2 {
 
 .contactInstructions h2 span {
   font-weight: 700;
+}
+
+.contactInstructions h2 span:focus {
+  border: 1px solid pink;
+}
+
+.contactInstructions h2 span:active {
+  border: 1px solid yellow;
 }
 
 .contactInstructions h2 p {
@@ -1865,6 +2014,16 @@ header h2 {
   margin-top: 2rem;
 }
 
+.contactInstructions .contactNumber p:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.contactInstructions .contactNumber p:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 .bookAppoint {
   font-size: 1.5rem;
   color: black;
@@ -1880,6 +2039,16 @@ header h2 {
 
 .bookAppoint:hover {
   color: white;
+}
+
+.bookAppoint:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.bookAppoint:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
 }
 
 .appPic {
@@ -2076,6 +2245,20 @@ footer div h2 a {
   color: grey;
 }
 
+footer div h2 a:hover {
+  color: #b1b1b1;
+}
+
+footer div h2 a:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+footer div h2 a:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
 article {
   background-color: #131313;
 }
@@ -2165,6 +2348,16 @@ article section .flexing h4 {
 
 .footerContact p a:hover {
   color: pink;
+}
+
+.footerContact p a:focus {
+  color: #a07179;
+  border: 1px solid #8a3745;
+}
+
+.footerContact p a:active {
+  color: #a07179;
+  border: 1px solid #8a3745;
 }
 
 @media (max-width: 1300px) {

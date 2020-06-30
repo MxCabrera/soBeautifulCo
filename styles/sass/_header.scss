@@ -58,6 +58,17 @@ header {
    }
 }
 
+.hamburger {
+   &:focus {
+      color: pink;
+      border: 1px solid pink;
+   }
+   &:active {
+      color: yellow;
+      border: 1px solid yellow;
+   }
+}
+
 .nav-links {
    display: flex;
    list-style: none;
@@ -74,6 +85,14 @@ header {
       font-family: sans-serif;
       &:hover {
          color: rgb(255, 192, 203);
+      }
+      &:focus {
+         color: rgb(160, 113, 121);
+         border: 1px solid rgb(138, 55, 69);
+      }
+      &:active {
+         color: rgb(160, 113, 121);
+         border: 1px solid rgb(138, 55, 69);
       }
    }
 }
@@ -100,6 +119,14 @@ header {
       top: 45%;
       transform: translate(-5%, -50%);
       z-index: 200;
+      &:focus {
+         color: rgb(160, 113, 121);
+         border: 1px solid rgb(138, 55, 69);
+      }
+      &:active {
+         color: rgb(160, 113, 121);
+         border: 1px solid rgb(138, 55, 69);
+      }
    }
    .nav-links {
       // position: fixed;
@@ -186,16 +213,24 @@ header {
    text-transform: uppercase;
    vertical-align: middle;
    white-space: nowrap;
-  transition-property: transform;
-  transform: translateZ(0);
-  transition: box-shadow 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360);
+   transition-property: transform;
+   transform: translateZ(0);
+   transition: box-shadow 0.5s cubic-bezier(0.390, 0.500, 0.150, 1.360);
    
    &:hover {
-     box-shadow: 0 0 0 50px rgba(0,0,0,0.15) inset;
+      box-shadow: 0 0 0 50px rgba(0,0,0,0.15) inset;
    }
-  
-  &:active {
-    transform: translateY(3px);
-  }
- }
+   &:focus {
+      color: rgb(160, 113, 121);
+      border: 1px solid rgb(138, 55, 69);
+   }
+   &:active {
+      color: rgb(160, 113, 121);
+      border: 1px solid rgb(138, 55, 69);
+   }
+   
+   &:active {
+      transform: translateY(3px);
+   }
+}
 

@@ -52,6 +52,14 @@
                box-shadow: none;
                color: white;
             }
+            &:focus {
+               color: rgb(160, 113, 121);
+               border: 1px solid rgb(138, 55, 69);
+            }
+            &:active {
+               color: rgb(160, 113, 121);
+               border: 1px solid rgb(138, 55, 69);
+            }
          }
          .buyProduct {
             background-color: pink;
