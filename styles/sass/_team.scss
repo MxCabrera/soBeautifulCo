@@ -327,5 +327,12 @@
 @media (max-width: 330px) {
    .mainTeam {
       height: 275rem;
+      .teamAbsolute {
+         top: -8.5rem;
+      }
+   }
+   .headerTeam {
+      background-position: 90% 29%;
+      height: 23rem;
    }
 }

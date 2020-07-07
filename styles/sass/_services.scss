@@ -326,11 +326,19 @@
    .serviceContainer .productType .serviceImage img {
       height: 19rem;
    }
+   .headerService {
+      background-position: top;
+      background-size: contain;
+      height: 46vh;
+   }
 }
 
 @media (max-width: 400px) {
    .allServices {
       margin-top: 5rem;
+   }
+   .headerService {
+      height: 41vh;
    }
    .headerService .wrapper h2 {
       font-size: 2.5rem;
@@ -361,6 +369,13 @@
 }
 
 @media (max-width: 320px) {
+   .headerService {
+      height: 33vh;
+   }
+   .headerService .wrapper h2 {
+      font-size: 2.1rem;
+      padding-top: 1rem;
+   }
    .serviceContainer .productType .serviceImage img {
       height: 15rem;
    }
@@ -370,5 +385,13 @@
             width: 8.5rem;
          }
       }
+   }
+   .serviceNav {
+      h2 {
+         font-size: 1.6rem;
+      }
+   }
+   .serviceContainer h3 {
+      font-size: 1.4rem;
    }
 }

@@ -850,9 +850,36 @@ header h2 {
 }
 
 @media (max-width: 450px) {
+  .wrap {
+    left: 62%;
+    top: 4%;
+  }
   .bookButton {
-    font-size: 20px;
-    padding: 20px 30px;
+    font-size: 17px;
+    padding: 15px 20px;
+  }
+  .headerLanding {
+    background-position: top;
+    background-size: contain;
+    height: 50vh;
+  }
+  .headerLanding .indexTitle {
+    font-size: 2.2rem;
+    padding-top: 12rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrap {
+    left: 60%;
+    top: 4%;
+  }
+  .bookButton {
+    font-size: 17px;
+    padding: 15px 20px;
+  }
+  .headerLanding .indexTitle {
+    padding-top: 11rem;
   }
 }
 
@@ -860,21 +887,12 @@ header h2 {
   nav .navWrap .logo {
     margin-top: 0.5rem;
   }
-  .headerLanding {
-    height: 85vh;
-    background-position: 20%;
-  }
   .headerLanding .indexTitle {
-    padding-top: 1rem;
     font-size: 2rem;
+    padding-top: 10rem;
   }
   .wrap {
-    left: 48%;
-    top: 27%;
-  }
-  .bookButton {
-    font-size: 20px;
-    padding: 20px 30px;
+    left: 58%;
   }
   header h2 {
     width: 65%;
@@ -893,22 +911,57 @@ header h2 {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
   .wrap {
-    left: 43%;
+    left: 57%;
   }
   .bookButton {
-    font-size: 20px;
-    padding: 20px 30px;
+    font-size: 17px;
+    padding: 15px 20px;
+  }
+  .headerLanding {
+    height: 40vh;
+  }
+  .headerLanding .indexTitle {
+    font-size: 1.8rem;
+    padding-top: 10rem;
+  }
+  .carousel h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrap {
+    left: 56%;
+  }
+  .bookButton {
+    font-size: 15px;
+    padding: 15px 18px;
+  }
+  .headerLanding {
+    height: 40vh;
+  }
+  .headerLanding .indexTitle {
+    font-size: 1.7rem;
+    padding-top: 9.2rem;
   }
 }
 
 @media (max-width: 320px) {
   .wrap {
-    left: 38%;
+    left: 54%;
+  }
+  .bookButton {
+    font-size: 15px;
+    padding: 12px 17px;
   }
   .headerLanding {
-    background-position: 25%;
+    height: 35vh;
+  }
+  .headerLanding .indexTitle {
+    font-size: 1.7rem;
+    padding-top: 8.7rem;
   }
 }
 
@@ -1262,6 +1315,13 @@ header h2 {
   .mainTeam {
     height: 275rem;
   }
+  .mainTeam .teamAbsolute {
+    top: -8.5rem;
+  }
+  .headerTeam {
+    background-position: 90% 29%;
+    height: 23rem;
+  }
 }
 
 .mainService {
@@ -1605,11 +1665,19 @@ header h2 {
   .serviceContainer .productType .serviceImage img {
     height: 19rem;
   }
+  .headerService {
+    background-position: top;
+    background-size: contain;
+    height: 46vh;
+  }
 }
 
 @media (max-width: 400px) {
   .allServices {
     margin-top: 5rem;
+  }
+  .headerService {
+    height: 41vh;
   }
   .headerService .wrapper h2 {
     font-size: 2.5rem;
@@ -1638,11 +1706,24 @@ header h2 {
 }
 
 @media (max-width: 320px) {
+  .headerService {
+    height: 33vh;
+  }
+  .headerService .wrapper h2 {
+    font-size: 2.1rem;
+    padding-top: 1rem;
+  }
   .serviceContainer .productType .serviceImage img {
     height: 15rem;
   }
   .serviceNavFlex li a {
     width: 8.5rem;
+  }
+  .serviceNav h2 {
+    font-size: 1.6rem;
+  }
+  .serviceContainer h3 {
+    font-size: 1.4rem;
   }
 }
 
@@ -1826,6 +1907,14 @@ header h2 {
   }
 }
 
+@media (max-width: 450px) {
+  .headerProducts {
+    background-position: top;
+    background-size: contain;
+    height: 46vh;
+  }
+}
+
 @media (max-width: 400px) {
   .productSection {
     margin: 2rem auto 3rem auto;
@@ -1849,6 +1938,9 @@ header h2 {
   .productSection .productContainer a button {
     width: 43%;
     font-size: .6rem;
+  }
+  .headerProducts {
+    height: 35vh;
   }
 }
 
@@ -2206,13 +2298,26 @@ header h2 {
   }
 }
 
+@media (max-width: 450px) {
+  .headerContact .wrapper h2 {
+    width: 65%;
+    font-size: 2.2rem;
+    padding-top: 1.3rem;
+  }
+  .headerContact {
+    background-position: top;
+    background-size: contain;
+    height: 46vh;
+  }
+}
+
 @media (max-width: 400px) {
   .headerContact {
-    background-position: 40% 10%;
+    height: 39vh;
   }
   .headerContact .wrapper h2 {
-    font-size: 2.5rem;
-    padding-top: 1.8rem;
+    font-size: 1.8rem;
+    padding-top: 1.1rem;
   }
   .contactInstructions .warning {
     font-size: 1.5rem;
@@ -2223,6 +2328,12 @@ header h2 {
   .thanks {
     width: 65%;
     font-size: .8rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .headerContact {
+    height: 35vh;
   }
 }
 

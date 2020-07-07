@@ -176,6 +176,14 @@
    }
 }
 
+@media (max-width: 450px) {
+   .headerProducts {
+      background-position: top;
+      background-size: contain;
+      height: 46vh;
+   }
+}
+
 @media (max-width: 400px) {
    .productSection {
       margin: 2rem auto 3rem auto;
@@ -211,5 +219,8 @@
             font-size: .6rem;
          }
       }
+   }
+   .headerProducts {
+      height: 35vh;
    }
 }

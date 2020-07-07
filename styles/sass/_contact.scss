@@ -319,12 +319,27 @@
    }
 }
 
-@media (max-width: 400px) {
+
+
+@media (max-width: 450px) {
+   .headerContact .wrapper h2 {
+      width: 65%;
+      font-size: 2.2rem;
+      padding-top: 1.3rem;
+   }
    .headerContact {
-      background-position: 40% 10%;
+      background-position: top;
+      background-size: contain;
+      height: 46vh;
+   }
+}
+
+   @media (max-width: 400px) {
+   .headerContact {
+      height: 39vh;
       .wrapper h2 {
-         font-size: 2.5rem;
-         padding-top: 1.8rem;
+         font-size: 1.8rem;
+         padding-top: 1.1rem;
       }
    }
    .contactInstructions .warning {
@@ -336,5 +351,12 @@
    .thanks {
       width: 65%;
       font-size: .8rem;
+   }
+}
+
+
+@media (max-width: 330px) {
+   .headerContact {
+      height: 35vh;
    }
 }

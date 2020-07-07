@@ -275,10 +275,37 @@
 
 
 @media (max-width: 450px) {
-
+   .wrap {
+      left: 62%;
+      top: 4%;
+   }
    .bookButton {
-      font-size: 20px;
-      padding: 20px 30px;
+      font-size: 17px;
+      padding: 15px 20px;
+   }
+   .headerLanding {
+      background-position: top;
+      background-size: contain;
+      height: 50vh;
+      .indexTitle {
+         font-size: 2.2rem;
+         padding-top: 12rem;
+      }
+   }
+}
+@media (max-width: 425px) {
+   .wrap {
+      left: 60%;
+      top: 4%;
+   }
+   .bookButton {
+      font-size: 17px;
+      padding: 15px 20px;
+   }
+   .headerLanding {
+      .indexTitle {
+         padding-top: 11rem;
+      }
    }
 }
 
@@ -287,21 +314,18 @@
       margin-top: 0.5rem;
    }
    .headerLanding {
-      height: 85vh;
-      background-position: 20%;
       .indexTitle {
-         padding-top: 1rem;
          font-size: 2rem;
+         padding-top: 10rem;
       }
    }
    .wrap {
-      left: 48%;
-      top: 27%;
+      left: 58%;
    }
-   .bookButton {
-      font-size: 20px;
-      padding: 20px 30px;
-   }
+   // .bookButton {
+   //    font-size: 20px;
+   //    padding: 20px 30px;
+   // }
    header h2 {
       width: 65%;
    }
@@ -323,21 +347,58 @@
    }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
    .wrap {
-      left: 43%;
+      left: 57%;
    }
    .bookButton {
-      font-size: 20px;
-      padding: 20px 30px;
+      font-size: 17px;
+      padding: 15px 20px;
+   }
+   .headerLanding {
+      height: 40vh;
+      .indexTitle {
+         font-size: 1.8rem;
+         padding-top: 10rem;
+      }
+   }
+   .carousel {
+      h2 {
+         font-size: 1.5rem;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .wrap {
+      left: 56%;
+   }
+   .bookButton {
+      font-size: 15px;
+      padding: 15px 18px;
+   }
+   .headerLanding {
+      height: 40vh;
+      .indexTitle {
+         font-size: 1.7rem;
+         padding-top: 9.2rem;
+      }
    }
 }
 
 @media (max-width: 320px) {
    .wrap {
-      left: 38%;
+      left: 54%;
+   }
+   .bookButton {
+      font-size: 15px;
+      padding: 12px 17px;
    }
    .headerLanding {
-      background-position: 25%;
+      height: 35vh;
+      .indexTitle {
+         font-size: 1.7rem;
+         padding-top: 8.7rem;
+      }
    }
 }
