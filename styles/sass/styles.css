@@ -872,7 +872,7 @@ header h2 {
 @media (max-width: 425px) {
   .wrap {
     left: 60%;
-    top: 4%;
+    top: 5%;
   }
   .bookButton {
     font-size: 17px;
