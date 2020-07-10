@@ -1,7 +1,7 @@
 // team section 
 .mainTeam {
    position: relative;
-   height: 168rem;
+   height: 196rem;
    .teamAbsolute {
       width: 90%;
       // margin: 0 auto;
@@ -120,15 +120,21 @@
    }
 }
 
-@media (max-width: 1182px) {
+@media (max-width: 1250px) {
    .mainTeam {
-      height: 175rem;
+      height: 200rem;
+   }
+}
+
+@media (max-width: 1200px) {
+   .mainTeam {
+      height: 210rem;
    }
 }
 
 @media (max-width: 1110px) {
    .mainTeam {
-      height: 185rem;
+      height: 220rem;
    }
 }
 
@@ -142,7 +148,7 @@
       }
    }
    .mainTeam {
-      height: 190rem;
+      height: 230rem;
    }
    .teamInfo {
       .flexSocial {
@@ -155,25 +161,31 @@
 
 @media (max-width: 1028px) {
    .mainTeam {
-      height: 200rem;
+      height: 240rem;
    }
 }
 
 @media (max-width: 958px) {
    .mainTeam {
-      height: 210rem;
+      height: 250rem;
    }
 }
 
 @media (max-width: 892px) {
    .mainTeam {
-      height: 225rem;
+      height: 260rem;
    }
 }
 
-@media (max-width: 820px) { 
+@media (max-width: 860px) { 
    .mainTeam {
-      height: 240rem;
+      height: 270rem;
+   }
+}
+
+@media (max-width: 802px) { 
+   .mainTeam {
+      height: 285rem;
    }
 }
 
@@ -189,7 +201,7 @@
       }
    }
    .mainTeam {
-      height: 160rem;
+      height: 190rem;
       .teamAbsolute {
          padding: 1rem 2rem;
       }
@@ -217,19 +229,19 @@
 
 @media (max-width: 712px) {
    .mainTeam {
-      height: 168rem;
+      height: 200rem;
    }
 }
 
 @media (max-width: 660px) {
    .mainTeam {
-      height: 171rem;
+      height: 210rem;
    }
 }
 
 @media (max-width: 628px) {
    .mainTeam {
-      height: 178rem;
+      height: 220rem;
    }
 }
 
@@ -244,7 +256,7 @@
       }
    }
    .mainTeam {
-      height: 232rem;
+      height: 275rem;
    }
    .teamflex {
       flex-direction: column;
@@ -268,15 +280,15 @@
    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 505px) {
    .mainTeam {
-      height: 240rem;
+      height: 290rem;
    }
 }
 
 @media (max-width: 460px) {
    .mainTeam {
-      height: 250rem;
+      height: 295rem;
    }
 }
 
@@ -292,7 +304,7 @@
       }
    }
    .mainTeam {
-      height: 265rem;
+      height: 315rem;
       .teamAbsolute {
          width: 95%;
          left: 2.5%;
@@ -306,11 +318,17 @@
    }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
    .mainTeam {
-      height: 273rem;
+      height: 320rem;
    }
 }
+
+// @media (max-width: 380px) {
+//    .mainTeam {
+//       height: 273rem;
+//    }
+// }
 
 
 @media (max-width: 350px) {
@@ -322,11 +340,13 @@
          }
       }
    }
+   .mainTeam {
+      height: 332rem;
+   }
 }
 
 @media (max-width: 330px) {
    .mainTeam {
-      height: 275rem;
       .teamAbsolute {
          top: -8.5rem;
       }
