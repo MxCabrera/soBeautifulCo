@@ -670,6 +670,11 @@ header h2 {
 
 .social {
   margin: 1rem auto 3rem auto;
+  width: 90%;
+}
+
+.social .insta {
+  margin-bottom: 4rem;
 }
 
 .social a {
