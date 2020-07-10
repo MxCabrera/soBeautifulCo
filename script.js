@@ -1,4 +1,7 @@
+// name spacing object 
 const app = {};
+
+// types of services array 
 app.services = [
    {
       service: "Eyelash Extensions",
@@ -138,6 +141,7 @@ app.services = [
    }
 ]
 
+// when called, map through the app.services array and append the specific data onto the DOM.
 
 app.getServices = () => {
    app.services.map((stuff) => {
@@ -168,6 +172,8 @@ app.getServices = () => {
       `)
    })
 }
+
+// when button is clicked, sweet alert pops up on DOM containing information about product.
 
 $('.productAlert1').on('click', function () {
    Swal.fire({
@@ -238,9 +244,14 @@ $('.morePIngredients').on('click', function () {
    })
 })
 
+// connecting Hamburger menu to the javascript file.
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
+
+// When hamburger menu is clicked, toggle the open menu box.
+// Show each link transitionally one after the other.
 
 hamburger.addEventListener('click', ()=> {
    navLinks.classList.toggle('open');
@@ -248,6 +259,8 @@ hamburger.addEventListener('click', ()=> {
       link.classList.toggle('fade');
    })
 })
+
+// document ready function.
 
 $(function(){
    app.getServices()
