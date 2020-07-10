@@ -37,21 +37,21 @@ app.services = [
          {
             name: "Classic Lash Extension",
             price: 50.00,
-            duration: "45mins",
+            duration: "1hr 15mins",
             class: "refill1",
             image: "refill.png",
             info: "Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a Full Set"
          }, {
             name: "Hybrid Lash Extensions",
             price: 65.00,
-            duration: "45mins",
+            duration: "1hr 30mins",
             class: "refill2",
             image: "refill.png",
             info: " Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a full Set"
          }, {
             name: "Volume Lash Extensions",
-            price: 50.00,
-            duration: "45mins",
+            price: 75.00,
+            duration: "1hr 45mins",
             class: "refill3",
             image: "refill.png",
             info: "Refills are recommended every 2-4 weeks. Please remember to have 40% or more of your Eyelash Extensions to be left to be considered a refill. If anything is less, you will be charged for a full Set"
@@ -64,7 +64,7 @@ app.services = [
       type: [
          {
             name: "No Tint",
-            price: 60.00,
+            price: 65.00,
             duration: "45mins",
             image: "BrowLam.jpg",
             class: "brow1",
@@ -72,7 +72,7 @@ app.services = [
          }, {
             name: "With Tint",
             price: 80.00,
-            duration: "15mins",
+            duration: "1hr",
             image: "browTint.jpg",
             class: "brow2",
             info: "Semi permanent treatment that naturally lifts your brow hair to achieve a fuller and more uniform brow look. Tint can only be applied a week later to avoid overprocessing brow hairs. Tinting your brows provides a more uniform and shaper appearance. (Last 4-12 weeks) ",
@@ -87,14 +87,14 @@ app.services = [
          {
             name: "Full Body",
             price: 45.00,
-            duration: "10mins",
+            duration: "35mins",
             image: "tan.jpg",
             class: "spray1",
             info: "Choose from 4 shades Latte,Espresso,Moka & Hot Chocolate. (Lasts 2-3 weeks)"
          }, {
             name: "Extra Coat",
             price: 10.00,
-            duration: "10mins",
+            duration: "15mins",
             image: "tan.jpg",
             class: "spray2",
             info: "Additional Spray Tan coat"

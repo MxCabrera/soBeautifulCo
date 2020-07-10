@@ -346,7 +346,7 @@ nav .navWrap .nav-links li a {
 .headerTeam {
   background-position: 50% 25%;
   height: 40rem;
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../../assets/pic4.jpeg);
+  background-image: linear-gradient(135deg, rgba(244, 245, 197, 0.2), rgba(247, 248, 209, 0.2), rgba(253, 253, 216, 0.2)), url(../../assets/pic4.jpg);
   background-repeat: no-repeat;
 }
 
